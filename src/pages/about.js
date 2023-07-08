@@ -1,13 +1,14 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import Head from "next/head";
 import { AnimatedText } from "@/components/elements/AnimatedText";
 import { Layout } from "@/components/layout/Layout";
-import Image from "next/image";
-import aboutMePic from "../../public/images/profile/Kimi_Wave.png";
+import aboutMePic from "../../public/images/profile/Headshot.png";
+import aboutMeWavePic from "../../public/images/profile/Headshot-Wave.png";
 import { useInView, useMotionValue, useSpring } from "framer-motion";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import Education from "@/components/Education";
+import Image from "next/image";
 
 const AnimatedNumbers = ({ value }) => {
   const ref = useRef(null);
@@ -36,6 +37,8 @@ const AnimatedNumbers = ({ value }) => {
 };
 
 export const About = () => {
+  const [pic, setPic] = useState(false);
+
   return (
     <>
       <Head>
@@ -67,16 +70,17 @@ export const About = () => {
             </div>
 
             <div className="relative col-span-3 h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 dark:bg-dark dark:border-light dark:border-[1px]">
+              <div className="absolute top-0 -right-5 -z-10 w-[102%] h-[103%] rounded-2xl bg-dark dark:bg-light" />
               <AnimatedText
                 text={"Hello World!"}
                 className="mb-4 dark:text-light"
               />
-              <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-2xl bg-dark dark:bg-light" />
               <Image
-                src={aboutMePic}
+                className="w-auto h-1/2 rounded-2xl cursor-pointer"
+                onMouseOver={() => setPic(true)}
+                onMouseOut={() => setPic(false)}
                 alt="Kimi Nel"
-                className="w-full h-auto rounded-2xl"
-                priority="true"
+                src={pic ? aboutMeWavePic : aboutMePic}
               />
             </div>
 

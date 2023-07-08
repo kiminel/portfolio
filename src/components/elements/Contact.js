@@ -6,7 +6,7 @@ export const Contact = () => {
   return (
     <div className="absolute left-4 bottom-16 flex items-center justify-center overflow-hidden">
       <div className="w-48 h-auto items-center justify-center">
-        <CircularText className="animate-spin dark:text-light" />
+        <CircularText className="animate-reverse-spin dark:text-light" />
         <FlashButton
           text={"Contact"}
           href={"mailto:kiminel25@gmail.com"}

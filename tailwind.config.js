@@ -9,6 +9,16 @@ module.exports = {
       fontFamily: {
         mont: ["var(--font-mont)", ...fontFamily.sans],
       },
+      animation: {
+        "reverse-spin": "reverse-spin 8s linear infinite",
+      },
+      keyframes: {
+        "reverse-spin": {
+          from: {
+            transform: "rotate(360deg)",
+          },
+        },
+      },
     },
     colors: {
       dark: "#1b1b1b",
@@ -19,7 +29,6 @@ module.exports = {
       night: "#1e8bc3",
     },
     animation: {
-      spin: "spin 8s linear infinite",
       pulse: "pulse 5s infinite",
       bounce: "bounce 1s infinite",
       ping: "ping 1.5s cubic-bezier(1, 1, 1, 1) infinite",
