@@ -10,7 +10,7 @@ const Footer = () => {
           {new Date().getFullYear()} &copy; All Rights Reserved
         </span>
         <CustomLink
-          href={"https://www.linkedin.com/in/kimi-monique-nel-67a289191/"}
+          href={"https://portfolio-kimi-nel.vercel.app/"}
           title={"Kimi Monique Nel"}
           target="_blank"
           className="dark:text-light"
