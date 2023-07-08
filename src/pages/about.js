@@ -53,7 +53,7 @@ export const About = () => {
                 Hi, I&apos;m Kimi!
               </h2>
               <p className="font-medium dark:text-light">
-                I am a Web/ Full Stack Developer with a passion for creating
+                I am a Software Engineer/ Full Stack Developer with a passion for creating
                 beautiful, responsive websites!
               </p>
               <p className="font-medium my-4 dark:text-light">
