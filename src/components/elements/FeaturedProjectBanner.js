@@ -13,7 +13,7 @@ const FeaturedProjectBanner = () => {
 
       <div className="col-span-1">
         <FeatureBannerFlag className={"h-auto w-64 pb-2 dark:text-light"} />
-        <div className="pl-12">
+        <div className="pl-16">
           <Sparkles
             className={
               "w-10 h-10 text-sparkle justify-center animate-ping dark:text-night"
@@ -21,7 +21,7 @@ const FeaturedProjectBanner = () => {
           />
         </div>
       </div>
-      <div className="col-span-1 pl-6 pt-8">
+      <div className="col-span-1 pl-12 pt-8">
         <Sparkles
           className={"w-10 h-10 text-sparkle animate-ping2 dark:text-night"}
         />

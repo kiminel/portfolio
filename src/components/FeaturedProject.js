@@ -5,9 +5,9 @@ import FeaturedProjectBanner from "./elements/FeaturedProjectBanner";
 
 const FeaturedProject = ({ title, summary, image, hostedLink, githubLink }) => {
   return (
-    <article className="w-full h-3/4 my-8 flex items-center justify-around space-x-6 rounded-3xl bg-light shadow-2xl shadow-dark p-6 hover:shadow-shine dark:bg-dark dark:shadow-light dark:hover:shadow-night">
-      <div className="w-1/2 h-full justify-center items-center flex">
-        <Image src={image} alt={title} className="max-w-md h-auto" />
+    <article className="w-full my-8 flex items-center justify-around space-x-6 rounded-3xl bg-light shadow-2xl shadow-dark p-6 hover:shadow-night dark:bg-dark dark:shadow-light dark:hover:shadow-night">
+      <div className="object-cover">
+        <Image src={image} alt={title} className="w-full h-auto" />
       </div>
 
       <div className="w-1/2 h-full grid grid-cols-1 grid-rows-3 items-center">
