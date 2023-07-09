@@ -5,7 +5,7 @@
 This project is my official Portfolio website, which contains my contact details, showcase projects and CV.
 <br/>
 
-## Hosting
+## Hosting 
 
 Open the Link below to view a Hosted version of this project:
 
