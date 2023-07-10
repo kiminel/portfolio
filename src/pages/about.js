@@ -6,14 +6,12 @@ import aboutMePic from "../../public/images/profile/Headshot.png";
 import aboutMeWavePic from "../../public/images/profile/Headshot-Wave.png";
 import { useInView, useMotionValue, useSpring } from "framer-motion";
 import Skills from "@/components/Skills";
-import Experience from "@/components/Experience";
-import Education from "@/components/Education";
 import Image from "next/image";
+import TimeLine from "@/components/TimeLine";
 
 const AnimatedNumbers = ({ value }) => {
   const ref = useRef(null);
 
-  //https://www.framer.com/motion/motionvalue
   const motionValue = useMotionValue(0);
   const springValue = useSpring(motionValue, { duration: 3000 });
   const isInView = useInView(ref, { once: true });
@@ -45,16 +43,16 @@ export const About = () => {
         <title>About | Kimi Nel</title>
         <meta name="about" description="About Kimi Nel"></meta>
       </Head>
-      <main className="flex w-full flex-col item-center justify-center">
-        <Layout className="py-12">
-          <div className="grid w-full grid-cols-8 gap-16">
-            <div className="col-span-3 flex flex-col items-start justify-center text-lg ">
-              <h2 className="mb-4 text-2xl font-bold uppercase text-dark/75 dark:text-light/75">
+      <main className="w-full flex flex-col item-center justify-center">
+        <Layout className="py-8">
+          <div className="w-full lg:grid grid-cols-8 gap-16 items-center">
+            <div className="col-span-3 flex flex-col items-start justify-center text-md md:text-lg py-6">
+              <h2 className="mb-4 text-lg md:text-2xl font-bold uppercase text-dark/75 dark:text-light/75">
                 Hi, I&apos;m Kimi!
               </h2>
               <p className="font-medium dark:text-light">
-                I am a Software Engineer/ Full Stack Developer with a passion for creating
-                beautiful, responsive websites!
+                I am a Software Engineer/ Full Stack Developer with a passion
+                for creating beautiful, responsive websites!
               </p>
               <p className="font-medium my-4 dark:text-light">
                 I enjoy exploring the latest standards and optimizing the
@@ -69,23 +67,26 @@ export const About = () => {
               </p>
             </div>
 
-            <div className="relative col-span-3 h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 dark:bg-dark dark:border-light dark:border-[1px]">
+            <div className="relative col-span-3 h-max rounded-2xl border-2 border-solid border-dark bg-light p-4 dark:bg-dark dark:border-light dark:border-[1px]">
               <div className="absolute top-0 -right-5 -z-10 w-[102%] h-[103%] rounded-2xl bg-dark dark:bg-light" />
-              <AnimatedText
-                text={"Hello World!"}
-                className="mb-4 dark:text-light"
-              />
-              <Image
-                className="w-auto h-1/2 rounded-2xl cursor-pointer"
-                onMouseOver={() => setPic(true)}
-                onMouseOut={() => setPic(false)}
-                alt="Kimi Nel"
-                src={pic ? aboutMeWavePic : aboutMePic}
-              />
+
+              <div className="w-full flex flex-col justify-center items-center">
+                <AnimatedText
+                  text={"Hello World!"}
+                  className="mb-4 dark:text-light"
+                />
+                <Image
+                  className="w-auto max-h-[600px] rounded-2xl cursor-pointer"
+                  onMouseOver={() => setPic(true)}
+                  onMouseOut={() => setPic(false)}
+                  alt="Kimi Nel"
+                  src={pic ? aboutMeWavePic : aboutMePic}
+                />
+              </div>
             </div>
 
-            <div className="col-span-2 flex flex-col items-end justify-between dark:text-light">
-              <div className="flex flex-col items-end justify-center">
+            <div className="h-full col-span-2 flex flex-col items-center lg:items-end justify-between dark:text-light py-8 gap-y-4 lg:gap-y-0">
+              <div className="flex flex-col lg:items-end items-center lg:justify-center">
                 <span className="inline-block text-7xl font-bold">
                   <AnimatedNumbers value={3} />+
                 </span>
@@ -93,7 +94,7 @@ export const About = () => {
                   Showcase Projects
                 </h2>
               </div>
-              <div className="flex flex-col items-end justify-center">
+              <div className="flex flex-col lg:items-end items-center lg:justify-center">
                 <span className="inline-block text-7xl font-bold">
                   <AnimatedNumbers value={10} />+
                 </span>
@@ -101,7 +102,7 @@ export const About = () => {
                   Languages & Frameworks
                 </h2>
               </div>
-              <div className="flex flex-col items-end justify-center">
+              <div className="flex flex-col lg:items-end items-center lg:justify-center">
                 <span className="inline-block text-7xl font-bold">
                   <AnimatedNumbers value={2} />+
                 </span>
@@ -111,13 +112,59 @@ export const About = () => {
               </div>
             </div>
           </div>
-          <Experience />
-          <Education />
+          <TimeLine title={"Experience"} details={experienceDetails} />
+          <TimeLine title={"Education"} details={educationDetails} />
           <Skills />
         </Layout>
       </main>
     </>
   );
 };
+
+const experienceDetails = [
+  {
+    title: "Software Engineer",
+    place: "WORTH Internet Systems",
+    placeLink: "https://worth.systems/",
+    time: "Dec 2021 - May 2023",
+    location: "Reading | United Kingdom",
+    description:
+      "Worked on a variety of projects, ranging in different technologies and teams. After 4 months, I was placed on one of the company's Funding Service clients' projects. I worked with numerous team members, including Product Owners, Business Analysts, Quality Assurance testers, Delivery- and Tech Leads, as well as UI/UX designers and Content Writers.",
+  },
+  {
+    title: "Junior Web Developer",
+    place: "Newsclip Media Monitoring",
+    placeLink: "https://www.newsclip.co.za/",
+    time: "Feb 2021 - Nov 2021",
+    location: "Cape Town | South Africa",
+    description:
+      "Worked with a team member to refactor, maintain and build the company CRM system. Later, I was paired with another team member to design and build a product-training system, to teach users how to use the main product. We worked closely with the Sales- and Support- Departments; as well as provided regular feedback demos to the CEO and CTO.",
+  },
+];
+
+const educationDetails = [
+  {
+    title: "Bachelor of Science in Information Technology",
+    place: "Pearson Institute of Higher Education",
+    placeLink:
+      "https://universities.co.za/places/pearson-institute-of-higher-education/",
+    time: "obtained in 2020",
+    location: "Durbanville | Cape Town",
+  },
+  {
+    title: "Higher Certificate in Information Systems Engineering",
+    place: "CTI Education Group",
+    placeLink: "https://sastudy.co.za/about-cti/",
+    time: "obtained in 2017",
+    location: "Durbanville | Cape Town",
+  },
+  {
+    title: "High School Diploma",
+    place: "Paarl Gymnasium High",
+    placeLink: "https://www.facebook.com/groups/131441200200865/?locale=af_ZA",
+    time: "obtained in 2015",
+    location: "Paarl | Winelands",
+  },
+];
 
 export default About;
