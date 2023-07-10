@@ -35,7 +35,7 @@ export default function Home() {
                   text={"Developing Your Visions"}
                   className="flex flex-wrap justify-start px-8 text-3xl"
                 />
-                <p className="my-4 text-base font-medium xs:px-16 sm:px-0 md:px-4 lg:px-0 text-center dark:text-light">
+                <p className="my-4 text-base font-medium px-4 lg:px-0 text-center dark:text-light">
                   I am a passionate, enthusiastic and eager developer with 2+
                   years&apos; experience. I enjoy all creative challenges and
                   will make your design dreams come true!
