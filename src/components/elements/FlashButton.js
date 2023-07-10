@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const MotionLink = motion(Link);
 
-export const FlashButton = ({ text, href, target, className, whileHover }) => {
+export const FlashButton = ({ text, href, target, className }) => {
   return (
     <>
       <MotionLink
@@ -24,7 +24,7 @@ export const FlashButton = ({ text, href, target, className, whileHover }) => {
           transition: { duration: 2.5, repeat: Infinity },
         }}
       >
-        {text}
+        <span className="h-full flex justify-center items-center">{text}</span>
       </MotionLink>
     </>
   );

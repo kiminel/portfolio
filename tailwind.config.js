@@ -42,12 +42,12 @@ module.exports = {
         "repeating-radial-gradient(rgba(255, 255, 255, 0.5) 2px, #1b1b1b 8px, #1b1b1b 130px)",
     },
     screens: {
-      "2xl": { max: "1535px" }, // media(max-width: 1535px)
-      xl: { max: "1279px" },
-      lg: { max: "1023px" },
-      md: { max: "767px" },
-      sm: { max: "639px" },
-      xs: { max: "479px" },
+      "2xl": { min: "1535px" }, // media(min-width: 1535px)
+      xl: { min: "1279px" },
+      lg: { min: "1023px" },
+      md: { min: "767px" },
+      sm: { min: "639px" },
+      xs: { min: "479px" },
     },
   },
   plugins: [],

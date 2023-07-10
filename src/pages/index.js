@@ -18,26 +18,24 @@ export default function Home() {
         />
       </Head>
       <main className="flex text-dark w-full h-full px-10">
-        <Layout className="pt-0 md:pt-16 sm:pt-8">
-          <div className="grid grid-cols-2">
-            <div className="col-span-1 flex justify-end">
+        <Layout className="pt-8">
+          <div className="grid grid-cols-1 xl:grid-cols-2 space-y-6">
+            <div className="col-span-1 flex justify-center xl:justify-end">
               <Image
                 src={profilePic}
                 alt="Kimi Nel"
-                className="w-auto h-auto"
+                className="w-auto min-w-[300px] max-h-[300px] md:max-h-[400px] lg:min-h-[500px]"
                 priority="true"
               />
             </div>
 
             <div className="col-span-1 flex justify-center self-center">
-              <div className="flex flex-col">
+              <div className="flex flex-col md:px-12 lg:px-0">
                 <AnimatedText
                   text={"Developing Your Visions"}
-                  className="flex flex-wrap justify-start px-8
-                xl:!text-5xl lg:!text-6xl md:!text-5xl sm:!text-3xl
-                "
+                  className="flex flex-wrap justify-start px-8 text-3xl"
                 />
-                <p className="my-4 text-base font-medium px-16 dark:text-light">
+                <p className="my-4 text-base font-medium xs:px-16 sm:px-0 md:px-4 lg:px-0 text-center dark:text-light">
                   I am a passionate, enthusiastic and eager developer with 2+
                   years&apos; experience. I enjoy all creative challenges and
                   will make your design dreams come true!

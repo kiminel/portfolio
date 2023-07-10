@@ -31,7 +31,7 @@ const Navbar = () => {
       </div>
 
       <button
-        className="absolute right-12 items-center justify-center mt-2 lg:flex hidden "
+        className="absolute right-12 items-center justify-center mt-2 flex sm:hidden"
         onClick={handleClick}
       >
         {!isOpen ? (
@@ -41,7 +41,7 @@ const Navbar = () => {
         )}
       </button>
 
-      <div className="w-full flex justify-between items-center lg:hidden">
+      <div className="w-full sm:flex justify-between items-center hidden">
         <nav className="dark:text-light">
           <CustomLink href={"/"} title={"Home"} className="mr-4" />
           <CustomLink href={"/about"} title={"About"} className="mx-4" />
