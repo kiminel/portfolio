@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const Skill = ({ name, xPosition, yPosition, href }) => {
   return (
     <motion.a
-      className="flex items-center justify-center rounded-full font-semibold bg-dark text-light py-3 px-6 shadow-dark cursor-pointer absolute dark:bg-light dark:text-dark"
+      className="flex items-center justify-center rounded-full font-semibold bg-dark text-light py-2 px-3 shadow-dark cursor-pointer absolute dark:bg-light dark:text-dark text-xs md:text-lg"
       href={href}
       target="_blank"
       whileHover={{ scale: 1.15 }}

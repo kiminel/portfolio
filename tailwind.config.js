@@ -36,10 +36,14 @@ module.exports = {
       ping3: "ping 3s cubic-bezier(1, 1, 1, 1) infinite",
     },
     backgroundImage: {
-      circularLight:
+      circularLightLarge:
         "repeating-radial-gradient(rgba(0,0,0,0.4) 2px, #f5f5f5 7px, #f5f5f5 130px)",
-      circularDark:
+      circularLightSmall:
+        "repeating-radial-gradient(rgba(0,0,0,0.4) 2px, #f5f5f5 7px, #f5f5f5 40px)",
+      circularDarkLarge:
         "repeating-radial-gradient(rgba(255, 255, 255, 0.5) 2px, #1b1b1b 8px, #1b1b1b 130px)",
+      circularDarkSmall:
+        "repeating-radial-gradient(rgba(255, 255, 255, 0.5) 2px, #1b1b1b 8px, #1b1b1b 40px)",
     },
     screens: {
       "2xl": { min: "1535px" }, // media(min-width: 1535px)
