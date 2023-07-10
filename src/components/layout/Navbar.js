@@ -115,7 +115,7 @@ const Navbar = () => {
             <a
               href={"https://github.com/kiminel"}
               target={"_blank"}
-              className="hover:-translate-y-1 transition duration-200 bg-dark text-light border-[2px] rounded-full p-1 hover:bg-light hover:border-solid hover:text-dark dark:bg-light dark:text-dark dark:hover:bg-dark dark:hover:text-light"
+              className="hover:-translate-y-1 transition duration-200 bg-dark text-light rounded-full p-1 hover:bg-light hover:border-solid hover:text-dark dark:bg-light dark:text-dark dark:hover:bg-dark dark:hover:text-light"
             >
               <GithubLogo className={"h-6 w-6"} />
             </a>

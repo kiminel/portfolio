@@ -26,7 +26,7 @@ const Projects = () => {
                 image={saFoodBlogCoverImage}
                 title={"South African Food Blog"}
                 summary={
-                  "A food blog containing popular, traditional South African recipes. In this project I am focussing on learning GraphQL and using hygraphCMS to manage the content. React.js and Tailwind CSS has been used for the front-end. Future features will be launched periodocally as part of an educational experiment - the feature Backlog is captured in the project's README.md."
+                  "A food blog containing popular, traditional South African recipes. In this project I am focusing on learning GraphQL and using hygraphCMS to manage the content. React.js and Tailwind CSS has been used for the front-end. Future features will be launched periodically as part of an educational experiment - the feature Backlog is captured in the project's README.md."
                 }
                 hostedLink={"https://sa-food-blog.netlify.app/"}
                 githubLink={"https://github.com/kiminel/food-blog"}
