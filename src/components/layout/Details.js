@@ -9,6 +9,7 @@ const Details = ({ title, place, placeLink, time, location, description }) => {
   return (
     <li
       ref={ref}
+      key={ref}
       className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col"
     >
       <ListIcon reference={ref} />
@@ -32,7 +33,9 @@ const Details = ({ title, place, placeLink, time, location, description }) => {
 
           <span className="flex gap-x-2 items-center">
             <Location className={"md:w-6 md:h-6 w-4 h-4 dark:text-light"} />
-            <span className="whitespace-nowrap text-sm lg:text-lg">{location}</span>
+            <span className="whitespace-nowrap text-sm lg:text-lg">
+              {location}
+            </span>
           </span>
         </div>
 

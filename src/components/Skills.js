@@ -8,14 +8,14 @@ const Skills = () => {
       <h2 className="font-bold text-8xl mt-36 w-full text-center dark:text-light">
         Skills
       </h2>
-      <div className="w-full min-h-[450px] lg:h-screen relative flex items-center justify-center rounded-full bg-circularLightSmall lg:bg-circularLightLarge dark:bg-circularDarkSmall lg:dark:bg-circularDarkLarge">
+      <div className="w-full min-h-[300px] lg:h-screen relative flex items-center justify-center rounded-full bg-circularLightSmall lg:bg-circularLightLarge dark:bg-circularDarkSmall lg:dark:bg-circularDarkLarge">
         <motion.div className="flex items-center justify-center rounded-full font-semibold bg-primary text-light p-8 shadow-dark dark:bg-night">
           Dev
         </motion.div>
         <Skill
           name={"CSS"}
           xPosition={"-15vw"}
-          yPosition={"-10vw"}
+          yPosition={"-12vw"}
           href={"https://developer.mozilla.org/en-US/docs/Web/CSS"}
         />
         <Skill
@@ -63,12 +63,12 @@ const Skills = () => {
         <Skill
           name={"Next.js"}
           xPosition={"1vw"}
-          yPosition={"-17vw"}
+          yPosition={"-18vw"}
           href={"https://nextjs.org/"}
         />
         <Skill
           name={"AWS"}
-          xPosition={"17vw"}
+          xPosition={"19vw"}
           yPosition={"3vw"}
           href={"https://docs.aws.amazon.com/"}
         />
@@ -80,7 +80,7 @@ const Skills = () => {
         />
         <Skill
           name={"TypeORM"}
-          xPosition={"19vw"}
+          xPosition={"18vw"}
           yPosition={"-12vw"}
           href={"https://typeorm.io/"}
         />

@@ -43,7 +43,7 @@ export const About = () => {
         <title>About | Kimi Nel</title>
         <meta name="about" description="About Kimi Nel"></meta>
       </Head>
-      <main className="w-full flex flex-col item-center justify-center">
+      <main className="w-full flex flex-col item-center justify-center px-4">
         <Layout className="py-8">
           <div className="w-full lg:grid grid-cols-8 gap-16 items-center">
             <div className="col-span-3 flex flex-col items-start justify-center text-md md:text-lg py-6">
