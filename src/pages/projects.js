@@ -35,7 +35,7 @@ const Projects = () => {
                 githubLink={"https://github.com/kiminel/food-blog"}
               />
             </div>
-            <div className="col-span-1">
+            <div className="col-span-2 xl:col-span-1">
               <Project
                 image={toDoPlannerCoverImage}
                 title={"To-Do Planner"}
