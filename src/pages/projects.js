@@ -19,6 +19,7 @@ const Projects = () => {
           <div className="my-8">
             <AnimatedText
               text={"Reality has limits. Imagination is boundless!"}
+              className="lg:text-center"
             />
           </div>
 

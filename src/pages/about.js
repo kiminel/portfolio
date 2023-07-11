@@ -73,7 +73,7 @@ export const About = () => {
               <div className="w-full flex flex-col justify-center items-center">
                 <AnimatedText
                   text={"Hello World!"}
-                  className="mb-4 dark:text-light"
+                  className="mb-4 dark:text-light text-center"
                 />
                 <Image
                   className="w-auto max-h-[600px] rounded-2xl cursor-pointer"

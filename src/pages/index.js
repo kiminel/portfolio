@@ -33,7 +33,7 @@ export default function Home() {
               <div className="flex flex-col md:px-12 lg:px-0">
                 <AnimatedText
                   text={"Developing Your Visions"}
-                  className="flex flex-wrap justify-start px-8 text-3xl"
+                  className="flex flex-wrap justify-start px-8 text-3xl text-center"
                 />
                 <p className="my-4 text-base font-medium px-4 lg:px-0 text-center dark:text-light">
                   I am a passionate, enthusiastic and eager developer with 2+

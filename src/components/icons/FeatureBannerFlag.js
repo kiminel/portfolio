@@ -3,8 +3,6 @@ import React from "react";
 const FeatureBannerFlag = ({ className }) => {
   return (
     <svg
-      width="486.000000pt"
-      height="178.000000pt"
       viewBox="0 0 486.000000 178.000000"
       preserveAspectRatio="xMidYMid meet"
       className={className}
