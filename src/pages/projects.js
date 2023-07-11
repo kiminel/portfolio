@@ -16,9 +16,11 @@ const Projects = () => {
       </Head>
       <main className="w-full mb-16 flex flex-col items-center justify-center">
         <Layout>
-          <AnimatedText
-            text={"Reality has limits. Imagination is boundless!"}
-          />
+          <div className="my-8">
+            <AnimatedText
+              text={"Reality has limits. Imagination is boundless!"}
+            />
+          </div>
 
           <div className="grid grid-cols-2 gap-24">
             <div className="col-span-2">
