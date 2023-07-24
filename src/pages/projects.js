@@ -4,7 +4,7 @@ import { Layout } from "@/components/layout/Layout";
 import { AnimatedText } from "@/components/elements/AnimatedText";
 import FeaturedProject from "@/components/FeaturedProject";
 import saFoodBlogCoverImage from "../images/SA-Food-Blog.png";
-import flowerPowerSpaCoverImage from "../images/Flower-Power-Spa.png";
+import flowerPowerSpaCoverImage from "../images/FlowerPower-Spa.png";
 import toDoPlannerCoverImage from "../images/To-Do-Planner.png";
 import Project from "@/components/Project";
 
