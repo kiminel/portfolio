@@ -4,6 +4,7 @@ import { Layout } from "@/components/layout/Layout";
 import { AnimatedText } from "@/components/elements/AnimatedText";
 import FeaturedProject from "@/components/FeaturedProject";
 import saFoodBlogCoverImage from "../images/SA-Food-Blog.png";
+import flowerPowerSpaCoverImage from "../images/Flower-Power-Spa.png";
 import toDoPlannerCoverImage from "../images/To-Do-Planner.png";
 import Project from "@/components/Project";
 
@@ -37,10 +38,21 @@ const Projects = () => {
             </div>
             <div className="col-span-2 xl:col-span-1">
               <Project
+                image={flowerPowerSpaCoverImage}
+                title={"Flower Power Spa"}
+                summary={
+                  "In this basic brochure website, I played around with video animation capabilities. Further expansions include adding pages to the Header Titles, featuring more animation experiments. The Tech Stack includes React, Typescript, WindiCSS and framer-motion."
+                }
+                hostedLink={"https://flower-power-spa.netlify.app/"}
+                githubLink={"https://github.com/kiminel/flower-power"}
+              />
+            </div>
+            <div className="col-span-2 xl:col-span-1">
+              <Project
                 image={toDoPlannerCoverImage}
                 title={"To-Do Planner"}
                 summary={
-                  "The focus for this basic To-Do Planner was to learn Vue.js and Tailwind CSS for the first time. I ended up loving Tailwind and prefer using it in my personal projects."
+                  "The focus for this To-Do Planner was to learn the basics of Vue.js. I also used TailwindCSS for the first time and ended up loving it! I prefer using it in my personal projects - it makes styling easy to read and write and quick edit. As always, this website was built with the mobile-first mindset and is fully responsive."
                 }
                 hostedLink={"https://to-do-planner.vercel.app/"}
                 githubLink={"https://github.com/kiminel/ToDo-Planner"}

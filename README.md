@@ -17,7 +17,7 @@ Open the Link below to view a Hosted version of this project:
 
     npm i
     npm run build
-    npm run start
+    npm run dev
 
 <br/>
 
