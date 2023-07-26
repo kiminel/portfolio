@@ -3,10 +3,10 @@ import Head from "next/head";
 import { Layout } from "@/components/layout/Layout";
 import { AnimatedText } from "@/components/elements/AnimatedText";
 import FeaturedProject from "@/components/FeaturedProject";
-import saFoodBlogCoverImage from "../../public/images/projects/SA-Food-Blog.png";
-import flowerPowerSpaCoverImage from "../../public/images/projects/FlowerPower-Spa.png";
-import chevonTutoringCoverImage from "../../public/images/projects/Chevon-Tutoring.png";
-import toDoPlannerCoverImage from "../../public/images/projects/To-Do-Planner.png";
+import saFoodBlogCoverImage from "../images/SA-Food-Blog.png";
+import flowerPowerSpaCoverImage from "../images/FlowerPower-Spa.png";
+import chevonTutoringCoverImage from "../images/Chevon-Tutoring.png";
+import toDoPlannerCoverImage from "../images/To-Do-Planner.png";
 import Project from "@/components/Project";
 
 const Projects = () => {
@@ -39,17 +39,6 @@ const Projects = () => {
             </div>
             <div className="col-span-2 xl:col-span-1">
               <Project
-                image={flowerPowerSpaCoverImage}
-                title={"Flower Power Spa"}
-                summary={
-                  "In this basic brochure website, I played around with video animation capabilities. Further expansions include adding pages to the Header Titles, featuring more animation experiments. The Tech Stack includes React, Typescript, WindiCSS and framer-motion."
-                }
-                hostedLink={"https://flower-power-spa.netlify.app/"}
-                githubLink={"https://github.com/kiminel/flower-power"}
-              />
-            </div>
-            <div className="col-span-2 xl:col-span-1">
-              <Project
                 image={chevonTutoringCoverImage}
                 title={"Chevon's Tutoring Services"}
                 summary={
@@ -57,6 +46,17 @@ const Projects = () => {
                 }
                 hostedLink={"https://chevon-kuik-tutoring.netlify.app/"}
                 githubLink={"https://github.com/kiminel/chevon-tutoring"}
+              />
+            </div>
+            <div className="col-span-2 xl:col-span-1">
+              <Project
+                image={flowerPowerSpaCoverImage}
+                title={"Flower Power Spa"}
+                summary={
+                  "In this basic brochure website, I played around with video animation capabilities. Further expansions include adding pages to the Header Titles, featuring more animation experiments. The Tech Stack includes React, Typescript, WindiCSS and framer-motion."
+                }
+                hostedLink={"https://flower-power-spa.netlify.app/"}
+                githubLink={"https://github.com/kiminel/flower-power"}
               />
             </div>
             <div className="col-span-2 xl:col-span-1">
