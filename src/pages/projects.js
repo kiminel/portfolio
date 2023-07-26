@@ -5,6 +5,7 @@ import { AnimatedText } from "@/components/elements/AnimatedText";
 import FeaturedProject from "@/components/FeaturedProject";
 import saFoodBlogCoverImage from "../../public/images/projects/SA-Food-Blog.png";
 import flowerPowerSpaCoverImage from "../../public/images/projects/FlowerPower-Spa.png";
+import chevonTutoringCoverImage from "../../public/images/projects/Chevon-Tutoring.png";
 import toDoPlannerCoverImage from "../../public/images/projects/To-Do-Planner.png";
 import Project from "@/components/Project";
 
@@ -45,6 +46,17 @@ const Projects = () => {
                 }
                 hostedLink={"https://flower-power-spa.netlify.app/"}
                 githubLink={"https://github.com/kiminel/flower-power"}
+              />
+            </div>
+            <div className="col-span-2 xl:col-span-1">
+              <Project
+                image={chevonTutoringCoverImage}
+                title={"Chevon's Tutoring Services"}
+                summary={
+                  "I am currently working with a client to build a website offering part-time Tutoring Services. The Tech Stack includes React, JavaScript, TailwindCSS and framer-motion. Additional tools include Canva and Adobe Express. I love creating interesting and engaging websites using movement and animations!"
+                }
+                hostedLink={"https://chevon-kuik-tutoring.netlify.app/"}
+                githubLink={"https://github.com/kiminel/chevon-tutoring"}
               />
             </div>
             <div className="col-span-2 xl:col-span-1">

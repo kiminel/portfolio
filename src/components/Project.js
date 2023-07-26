@@ -14,7 +14,7 @@ const Project = ({ title, summary, image, hostedLink, githubLink }) => {
       </div>
 
       <div className="flex flex-col row-span-2">
-        <h2 className="my-2 w-full text-center text-4xl font-bold dark:text-light">
+        <h2 className="my-2 w-full text-center text-3xl font-bold dark:text-light px-2">
           {title}
         </h2>
         <p className="my-2 font-medium text-dark dark:text-light">{summary}</p>
