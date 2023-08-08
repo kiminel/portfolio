@@ -21,29 +21,53 @@ const Navbar = () => {
   const scrollToHome = () => {
     const section = document.querySelector(`#home`)
     section.scrollIntoView({ behavior: 'smooth', block: 'start' })
-    handleClick()
   }
   const scrollToSkills = () => {
     const section = document.querySelector(`#skills`)
     section.scrollIntoView({ behavior: 'smooth', block: 'start' })
-    handleClick()
   }
   const scrollToEducation = () => {
     const section = document.querySelector(`#education`)
     section.scrollIntoView({ behavior: 'smooth', block: 'start' })
-    handleClick()
   }
   const scrollToExperience = () => {
     const section = document.querySelector(`#experience`)
     section.scrollIntoView({ behavior: 'smooth', block: 'start' })
-    handleClick()
   }
   const scrollToAbout = () => {
     const section = document.querySelector(`#about`)
     section.scrollIntoView({ behavior: 'smooth', block: 'start' })
-    handleClick()
   }
   const scrollToProjects = () => {
+    const section = document.querySelector(`#projects`)
+    section.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  }
+  const scrollToMobileHome = () => {
+    const section = document.querySelector(`#home`)
+    section.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    handleClick()
+  }
+  const scrollToMobileSkills = () => {
+    const section = document.querySelector(`#skills`)
+    section.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    handleClick()
+  }
+  const scrollToMobileEducation = () => {
+    const section = document.querySelector(`#education`)
+    section.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    handleClick()
+  }
+  const scrollToMobileExperience = () => {
+    const section = document.querySelector(`#experience`)
+    section.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    handleClick()
+  }
+  const scrollToMobileAbout = () => {
+    const section = document.querySelector(`#about`)
+    section.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    handleClick()
+  }
+  const scrollToMobileProjects = () => {
     const section = document.querySelector(`#projects`)
     section.scrollIntoView({ behavior: 'smooth', block: 'start' })
     handleClick()
@@ -128,22 +152,22 @@ const Navbar = () => {
             <Xmark className={'w-8 h-8 dark:text-light'} />
           </button>
           <nav className="dark:text-light flex flex-col gap-4">
-            <button onClick={scrollToHome} className="">
+            <button onClick={scrollToMobileHome} className="">
               Home
             </button>
-            <button onClick={scrollToSkills} className="">
+            <button onClick={scrollToMobileSkills} className="">
               Skills
             </button>
-            <button onClick={scrollToEducation} className="">
+            <button onClick={scrollToMobileEducation} className="">
               Education
             </button>
-            <button onClick={scrollToExperience} className="">
+            <button onClick={scrollToMobileExperience} className="">
               Experience
             </button>
-            <button onClick={scrollToAbout} className="">
+            <button onClick={scrollToMobileAbout} className="">
               About
             </button>
-            <button onClick={scrollToProjects} className="">
+            <button onClick={scrollToMobileProjects} className="">
               Projects
             </button>
           </nav>
