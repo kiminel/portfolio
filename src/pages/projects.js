@@ -9,7 +9,7 @@ import Project from '@/components/Project'
 const Projects = () => {
   return (
     <>
-      <div className="w-full mb-16 flex flex-col items-center justify-center mt-12 lg:pt-40">
+      <div className="w-full mb-8 flex flex-col items-center justify-center mt-12 lg:pt-40">
         <div className="pb-12">
           <AnimatedText
             text={'Reality has limits. Imagination is boundless!'}
