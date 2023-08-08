@@ -9,7 +9,7 @@ import Project from '@/components/Project'
 const Projects = () => {
   return (
     <>
-      <div className="w-full mb-8 flex flex-col items-center justify-center mt-12 lg:pt-40">
+      <div className="w-full mb-16 flex flex-col items-center justify-center mt-16 lg:pt-40">
         <div className="pb-12">
           <AnimatedText
             text={'Reality has limits. Imagination is boundless!'}
@@ -17,7 +17,7 @@ const Projects = () => {
           />
         </div>
 
-        <div className="grid grid-cols-2 gap-8 lg:gap-24">
+        <div className="grid grid-cols-2 gap-8 lg:gap-24 mt-8">
           <div className="col-span-2 xl:col-span-1">
             <Project
               image={saFoodBlogCoverImage}
@@ -29,6 +29,7 @@ const Projects = () => {
               githubLink={'https://github.com/kiminel/food-blog'}
             />
           </div>
+
           <div className="col-span-2 xl:col-span-1">
             <Project
               image={chevonTutoringCoverImage}
@@ -40,6 +41,7 @@ const Projects = () => {
               githubLink={'https://github.com/kiminel/chevon-tutoring'}
             />
           </div>
+
           <div className="col-span-2 xl:col-span-1">
             <Project
               image={flowerPowerSpaCoverImage}
@@ -51,6 +53,7 @@ const Projects = () => {
               githubLink={'https://github.com/kiminel/flower-power'}
             />
           </div>
+
           <div className="col-span-2 xl:col-span-1">
             <Project
               image={toDoPlannerCoverImage}
