@@ -5,52 +5,60 @@ import { motion } from 'framer-motion'
 const Skills = () => {
   return (
     <>
-      <h2 className="font-bold text-8xl mt-36 w-full text-center dark:text-light">Skills</h2>
-      <div className="w-full min-h-[300px] lg:h-screen relative flex items-center justify-center rounded-full bg-circularLightSmall lg:bg-circularLightLarge dark:bg-circularDarkSmall lg:dark:bg-circularDarkLarge">
-        <motion.div className="flex items-center justify-center rounded-full font-semibold bg-primary text-light p-8 shadow-dark dark:bg-night">
+      <h2 className="w-full font-bold lg:mt-40 mt-12 lg:pt-40 lg:mb-8 text-5xl lg:text-8xl text-center dark:text-light">
+        Skills
+      </h2>
+      <div className="w-full min-h-[400px] lg:h-[80vh] relative flex items-center justify-center rounded-full bg-circularLightSmall lg:bg-circularLightLarge dark:bg-circularDarkSmall lg:dark:bg-circularDarkLarge">
+        <motion.div className="flex items-center p-8 justify-center rounded-full font-semibold bg-primary dark:bg-night text-light shadow-dark">
           Dev
         </motion.div>
+
         <Skill
           name={'CSS'}
-          xPosition={'-15vw'}
-          yPosition={'-11vw'}
+          xPosition={'-7vw'}
+          yPosition={'-5vw'}
           href={'https://developer.mozilla.org/en-US/docs/Web/CSS'}
         />
         <Skill
           name={'HTML'}
-          xPosition={'-35vw'}
-          yPosition={'2vw'}
+          xPosition={'5vw'}
+          yPosition={'-9vw'}
           href={'https://developer.mozilla.org/en-US/docs/Web/HTML'}
         />
         <Skill
           name={'TypeScript'}
-          xPosition={'0vw'}
-          yPosition={'17vw'}
+          xPosition={'27vw'}
+          yPosition={'-8vw'}
           href={'https://www.typescriptlang.org/docs/'}
         />
         <Skill
           name={'framer-motion'}
-          xPosition={'-23vw'}
-          yPosition={'-20vw'}
+          xPosition={'-30vw'}
+          yPosition={'0vw'}
           href={'https://www.framer.com/motion/'}
         />
         <Skill
           name={'HeadlessUI'}
-          xPosition={'-25vw'}
+          xPosition={'-30vw'}
           yPosition={'-10vw'}
           href={'https://headlessui.com/'}
         />
         <Skill
           name={'C#'}
-          xPosition={'22vw'}
-          yPosition={'19vw'}
+          xPosition={'37vw'}
+          yPosition={'1vw'}
           href={'https://learn.microsoft.com/en-us/dotnet/csharp/'}
         />
-        <Skill name={'SQL'} xPosition={'33vw'} yPosition={'-5vw'} href={'https://dev.mysql.com/'} />
+        <Skill
+          name={'SQL'}
+          xPosition={'-10vw'}
+          yPosition={'14vw'}
+          href={'https://dev.mysql.com/'}
+        />
         <Skill
           name={'TypeORM'}
-          xPosition={'-20vw'}
-          yPosition={'10vw'}
+          xPosition={'-23vw'}
+          yPosition={'9vw'}
           href={'https://typeorm.io/'}
         />
         <Skill
@@ -59,53 +67,48 @@ const Skills = () => {
           yPosition={'10vw'}
           href={'https://docs.docker.com/'}
         />
-        <Skill name={'React'} xPosition={'1vw'} yPosition={'-18vw'} href={'https://react.dev/'} />
+        <Skill name={'React'} xPosition={'-2vw'} yPosition={'-15vw'} href={'https://react.dev/'} />
         <Skill
           name={'Tailwind CSS'}
-          xPosition={'-7vw'}
+          xPosition={'-20vw'}
           yPosition={'-15vw'}
           href={'https://https://tailwindcss.com/'}
         />
         <Skill
           name={'AWS'}
-          xPosition={'20vw'}
-          yPosition={'0vw'}
+          xPosition={'11vw'}
+          yPosition={'14vw'}
           href={'https://docs.aws.amazon.com/'}
         />
         <Skill
           name={'JavaScript'}
-          xPosition={'-28vw'}
-          yPosition={'19vw'}
+          xPosition={'18vw'}
+          yPosition={'-15vw'}
           href={'https://developer.mozilla.org/en-US/docs/Web/JavaScript'}
         />
         <Skill
           name={'Node.js'}
-          xPosition={'18vw'}
-          yPosition={'-12vw'}
+          xPosition={'24vw'}
+          yPosition={'2vw'}
           href={'https://nodejs.org/en'}
         />
         <Skill
           name={'Next.js'}
-          xPosition={'22vw'}
-          yPosition={'-18vw'}
+          xPosition={'11vw'}
+          yPosition={'-2vw'}
           href={'https://nextjs.org/'}
         />
-        <Skill
-          name={'GIT'}
-          xPosition={'28vw'}
-          yPosition={'-20vw'}
-          href={'https://git-scm.com/doc'}
-        />
+        <Skill name={'GIT'} xPosition={'3vw'} yPosition={'9vw'} href={'https://git-scm.com/doc'} />
         <Skill
           name={'Canva'}
-          xPosition={'-20vw'}
-          yPosition={'0vw'}
+          xPosition={'-21vw'}
+          yPosition={'-6vw'}
           href={'https://www.canva.com/'}
         />
         <Skill
           name={'Figma'}
-          xPosition={'-9vw'}
-          yPosition={'5vw'}
+          xPosition={'-11vw'}
+          yPosition={'3vw'}
           href={'https://www.figma.com/'}
         />
       </div>

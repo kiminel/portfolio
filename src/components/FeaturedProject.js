@@ -1,7 +1,7 @@
-import React from "react";
-import Link from "next/link";
-import Image from "next/image";
-import FeaturedProjectBanner from "./elements/FeaturedProjectBanner";
+import React from 'react'
+import Link from 'next/link'
+import Image from 'next/image'
+import FeaturedProjectBanner from './elements/FeaturedProjectBanner'
 
 const FeaturedProject = ({ title, summary, image, hostedLink, githubLink }) => {
   return (
@@ -26,15 +26,13 @@ const FeaturedProject = ({ title, summary, image, hostedLink, githubLink }) => {
               <h2 className="my-2 w-full text-2xl 2xl:text-4xl font-extrabold dark:text-light">
                 {title}
               </h2>
-              <p className="my-2 font-medium 2xl:text-lg text-dark dark:text-light">
-                {summary}
-              </p>
+              <p className="my-2 font-medium 2xl:text-lg text-dark dark:text-light">{summary}</p>
             </div>
             <div className="row-span-1 flex justify-center text-center">
               <Link
                 href={hostedLink}
                 target="_blank"
-                className="rounded-lg bg-dark text-light p-2 2xl:px-6 2xl:text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark hover:"
+                className="rounded-lg bg-dark text-light p-2 2xl:px-6 2xl:text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark animate-pulse"
               >
                 View Website
               </Link>
@@ -50,7 +48,7 @@ const FeaturedProject = ({ title, summary, image, hostedLink, githubLink }) => {
         </div>
       </div>
     </article>
-  );
-};
+  )
+}
 
-export default FeaturedProject;
+export default FeaturedProject

@@ -1,6 +1,6 @@
-import React from "react";
-import Image from "next/image";
-import Link from "next/link";
+import React from 'react'
+import Image from 'next/image'
+import Link from 'next/link'
 
 const Project = ({ title, summary, image, hostedLink, githubLink }) => {
   return (
@@ -14,15 +14,13 @@ const Project = ({ title, summary, image, hostedLink, githubLink }) => {
       </div>
 
       <div className="flex flex-col row-span-2">
-        <h2 className="my-2 w-full text-center text-3xl font-bold dark:text-light px-2">
-          {title}
-        </h2>
+        <h2 className="my-2 w-full text-center text-3xl font-bold dark:text-light px-2">{title}</h2>
         <p className="my-2 font-medium text-dark dark:text-light">{summary}</p>
         <div className="mt-2 flex items-center self-center">
           <Link
             href={hostedLink}
             target="_blank"
-            className="rounded-lg bg-dark text-light p-2 px-4 text-sm hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark hover:"
+            className="rounded-lg bg-dark text-light p-2 px-4 text-sm hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark animate-pulse"
           >
             View Website
           </Link>
@@ -36,7 +34,7 @@ const Project = ({ title, summary, image, hostedLink, githubLink }) => {
         </div>
       </div>
     </article>
-  );
-};
+  )
+}
 
-export default Project;
+export default Project

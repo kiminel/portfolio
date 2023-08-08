@@ -1,14 +1,14 @@
-import React, { useRef } from "react";
-import Details from "./layout/Details";
-import { motion, useScroll } from "framer-motion";
+import React, { useRef } from 'react'
+import Details from './layout/Details'
+import { motion, useScroll } from 'framer-motion'
 
 const TimeLine = ({ title, details }) => {
-  const ref = useRef(null);
+  const ref = useRef(null)
 
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["start end", "center start"],
-  });
+    offset: ['start end', 'center start'],
+  })
 
   return (
     <div className="mt-4 lg:my-36">
@@ -35,12 +35,12 @@ const TimeLine = ({ title, details }) => {
                   key={element.title}
                 />
               </>
-            );
+            )
           })}
         </ul>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default TimeLine;
+export default TimeLine

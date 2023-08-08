@@ -1,5 +1,5 @@
-import React from "react";
-import { motion } from "framer-motion";
+import React from 'react'
+import { motion } from 'framer-motion'
 
 const Skill = ({ name, xPosition, yPosition, href }) => {
   return (
@@ -11,11 +11,11 @@ const Skill = ({ name, xPosition, yPosition, href }) => {
       initial={{ x: 0, y: 0 }}
       whileInView={{ x: xPosition, y: yPosition }}
       transition={{ duration: 1 }}
-      viewport={{ once: true }}
+      viewport={{ once: false }}
     >
       {name}
     </motion.a>
-  );
-};
+  )
+}
 
-export default Skill;
+export default Skill

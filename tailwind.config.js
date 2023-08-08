@@ -28,6 +28,7 @@ module.exports = {
       night: '#1e8bc3',
     },
     animation: {
+      pulse: 'pulse 1.5s infinite',
       bounce: 'bounce 1s infinite',
       ping: 'ping 1.5s cubic-bezier(1, 1, 1, 1) infinite',
       ping2: 'ping 2.5s cubic-bezier(1, 1, 1, 1) infinite',
@@ -35,13 +36,13 @@ module.exports = {
     },
     backgroundImage: {
       circularLightLarge:
-        'repeating-radial-gradient(rgba(0,0,0,0.4) 2px, #f5f5f5 7px, #f5f5f5 130px)',
+        'repeating-radial-gradient(rgba(0,0,0,0.4) 2px, #f5f5f5 10px, #f5f5f5 120px)',
       circularLightSmall:
-        'repeating-radial-gradient(rgba(0,0,0,0.4) 2px, #f5f5f5 7px, #f5f5f5 40px)',
+        'repeating-radial-gradient(rgba(0,0,0,0.4) 2px, #f5f5f5 8px, #f5f5f5 25px)',
       circularDarkLarge:
-        'repeating-radial-gradient(rgba(255, 255, 255, 0.5) 2px, #1b1b1b 8px, #1b1b1b 130px)',
+        'repeating-radial-gradient(rgba(255, 255, 255, 0.5) 2px, #1b1b1b 10px, #1b1b1b 120px)',
       circularDarkSmall:
-        'repeating-radial-gradient(rgba(255, 255, 255, 0.5) 2px, #1b1b1b 8px, #1b1b1b 40px)',
+        'repeating-radial-gradient(rgba(255, 255, 255, 0.5) 2px, #1b1b1b 8px, #1b1b1b 25px)',
     },
     screens: {
       '2xl': { min: '1535px' }, // media(min-width: 1535px)
