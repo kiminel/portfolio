@@ -10,11 +10,13 @@ const AnimatedNumbers = ({ value }) => {
 
   const motionValue = useMotionValue(0)
   const springValue = useSpring(motionValue, { duration: 3000 })
-  const isInView = useInView(ref, { once: true })
+  const isInView = useInView(ref, { once: false })
 
   useEffect(() => {
     if (isInView) {
       motionValue.set(value)
+    } else {
+      motionValue.set(0)
     }
   }, [isInView, value, motionValue])
 
