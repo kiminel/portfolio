@@ -5,7 +5,7 @@ import Link from 'next/link'
 import profilePic from '../../public/images/profile/Kimi_Wave.png'
 import NewTabArrow from '@/components/icons/NewTabArrow'
 
-export const Hero = () => {
+const Hero = () => {
   return (
     <div className="grid grid-cols-1 xl:grid-cols-2 space-y-6">
       <div className="col-span-1 flex justify-center xl:justify-end">
@@ -24,10 +24,10 @@ export const Hero = () => {
             className="flex flex-wrap justify-start px-8 text-3xl text-center"
           />
           <p className="my-4 text-base font-medium px-4 lg:px-0 text-center dark:text-light">
-            I am a passionate, enthusiastic and eager developer with 2+ years experience. I
-            enjoy all creative challenges and will make your design dreams come true!
+            I am a passionate, enthusiastic and eager developer with 2+ years experience. I enjoy
+            all creative challenges and will make your design dreams come true!
           </p>
-          <div className="flex items-center justify-center text-center mt-2 px-8">
+          <div className="flex items-center justify-center text-center mt-2 px-8 animate-bounce">
             <Link
               href="/CV-KimiNel.pdf"
               target="_blank"
@@ -42,3 +42,5 @@ export const Hero = () => {
     </div>
   )
 }
+
+export default Hero

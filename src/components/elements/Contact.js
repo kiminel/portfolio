@@ -2,7 +2,7 @@ import React from 'react'
 import { CircularText } from '../icons/CircularText'
 import { FlashButton } from './FlashButton'
 
-export const Contact = () => {
+const Contact = () => {
   return (
     <div className="lg:absolute lg:left-4 lg:bottom-16 flex items-center justify-center overflow-hidden">
       <div className="w-full lg:w-48 h-auto flex items-center justify-center">
@@ -17,3 +17,4 @@ export const Contact = () => {
     </div>
   )
 }
+export default Contact

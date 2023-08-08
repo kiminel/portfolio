@@ -30,7 +30,7 @@ const AnimatedNumbers = ({ value }) => {
   return <span ref={ref}></span>
 }
 
-export const About = () => {
+const About = () => {
   const [pic, setPic] = useState(false)
 
   return (
@@ -96,3 +96,5 @@ export const About = () => {
     </div>
   )
 }
+
+export default About
