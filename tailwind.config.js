@@ -30,9 +30,6 @@ module.exports = {
     animation: {
       pulse: 'pulse 1.5s infinite',
       bounce: 'bounce 1s infinite',
-      ping: 'ping 1.5s cubic-bezier(1, 1, 1, 1) infinite',
-      ping2: 'ping 2.5s cubic-bezier(1, 1, 1, 1) infinite',
-      ping3: 'ping 3s cubic-bezier(1, 1, 1, 1) infinite',
     },
     backgroundImage: {
       circularLightLarge:
