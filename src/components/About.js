@@ -58,7 +58,7 @@ const About = () => {
         <div className="absolute top-0 -right-5 -z-10 w-[102%] h-[103%] rounded-2xl bg-dark dark:bg-light" />
 
         <div className="w-full flex flex-col justify-center items-center">
-          <AnimatedText text={'Hello World!'} className="mb-4 dark:text-light text-center" />
+          <AnimatedText text={'Hello World!'} className="mb-4 dark:text-light text-center text-5xl lg:text-6xl" />
           <Image
             className="w-auto max-h-[600px] rounded-2xl cursor-pointer"
             onMouseOver={() => setPic(true)}

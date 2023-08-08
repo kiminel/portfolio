@@ -8,7 +8,7 @@ import NewTabArrow from '@/components/icons/NewTabArrow'
 const Hero = () => {
   return (
     <div className="grid grid-cols-1 xl:grid-cols-2 space-y-6">
-      <div className="lg:pt-24 col-span-1 flex justify-center xl:justify-end">
+      <div className="lg:pt-36 col-span-1 flex justify-center xl:justify-end">
         <Image
           src={profilePic}
           alt="Kimi Nel"
@@ -21,9 +21,9 @@ const Hero = () => {
         <div className="flex flex-col md:px-12 lg:px-0">
           <AnimatedText
             text={'Developing Your Visions'}
-            className="flex flex-wrap justify-start px-8 text-3xl text-center"
+            className="flex flex-wrap text-5xl lg:text-6xl justify-center px-8 text-center"
           />
-          <p className="my-4 text-base font-medium px-4 lg:px-0 text-center dark:text-light">
+          <p className="my-8 text-base md:text-lg font-medium px-4 lg:px-0 text-center dark:text-light">
             I am a passionate, enthusiastic and eager developer with 2+ years experience. I enjoy
             all creative challenges and will make your design dreams come true!
           </p>

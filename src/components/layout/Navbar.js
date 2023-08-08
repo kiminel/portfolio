@@ -21,7 +21,7 @@ const Navbar = () => {
   }
 
   return (
-    <header className="w-full px-32 py-6 font-medium flex items-center justify-between dark:border-b dark:border-light sticky top-0 z-50 bg-light dark:bg-dark shadow-lg">
+    <header className="w-full px-32 py-8 font-medium flex items-center justify-between dark:border-b dark:border-light sticky top-0 z-50 bg-light dark:bg-dark shadow-lg">
       <div className="absolute left-12 flex items-center justify-center mt-2">
         {!isOpen && (
           <Link href={'/'}>
