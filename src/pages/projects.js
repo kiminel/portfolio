@@ -108,7 +108,7 @@ const Projects = () => {
               image={toDoPlannerCoverImage}
               title={'To-Do Planner'}
               summary={
-                'The focus for this To-Do Planner was to learn the basics of Vue.js. I also used TailwindCSS for the first time and ended up loving it! I prefer using it in my personal projects - it makes styling easy to read and write and quick edit. As always, this website was built with the mobile-first mindset and is fully responsive.'
+                'The focus for this To-Do Planner was to learn the basics of Vue.js. I also used TailwindCSS for the first time and ended up loving it! As always, this website was built with the mobile-first mindset and is fully responsive.'
               }
               skills={[
                 { skill: 'Vue.js', link: 'https://vuejs.org/' },
