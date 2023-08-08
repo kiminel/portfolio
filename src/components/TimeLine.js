@@ -16,7 +16,7 @@ const TimeLine = ({ title, details }) => {
         {title}
       </h2>
 
-      <div ref={ref} className="w-[75%] mx-auto relative">
+      <div ref={ref} className="w-[90%] lg:w-[75%] mx-auto relative">
         <ul>
           {details.map((element) => {
             return (

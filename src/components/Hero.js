@@ -8,7 +8,7 @@ import NewTabArrow from '@/components/icons/NewTabArrow'
 const Hero = () => {
   return (
     <div className="grid grid-cols-1 xl:grid-cols-2 space-y-6">
-      <div className="col-span-1 flex justify-center xl:justify-end">
+      <div className="lg:pt-24 col-span-1 flex justify-center xl:justify-end">
         <Image
           src={profilePic}
           alt="Kimi Nel"

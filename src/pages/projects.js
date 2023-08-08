@@ -17,7 +17,7 @@ const Projects = () => {
           />
         </div>
 
-        <div className="grid grid-cols-2 gap-24">
+        <div className="grid grid-cols-2 gap-8 lg:gap-24">
           <div className="col-span-2 xl:col-span-1">
             <Project
               image={saFoodBlogCoverImage}
