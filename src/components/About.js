@@ -54,8 +54,8 @@ const About = () => {
         </p>
       </div>
 
-      <div className="relative col-span-1 h-max rounded-2xl border-2 border-solid border-dark bg-light p-4 dark:bg-dark dark:border-night dark:border-[1px]">
-        <div className="absolute top-0 -right-5 -z-10 w-[102%] h-[103%] rounded-2xl bg-dark dark:bg-night" />
+      <div className="relative col-span-1 h-max rounded-2xl border-2 border-solid border-dark bg-light p-4 dark:bg-dark dark:border-light dark:border-[1px]">
+        <div className="absolute top-0 -right-5 -z-10 w-[102%] h-[103%] rounded-2xl bg-dark dark:bg-light" />
 
         <div className="w-full flex flex-col justify-center items-center">
           <AnimatedText text={'Hello World!'} className="mb-4 dark:text-light text-center" />
