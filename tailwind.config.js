@@ -28,6 +28,7 @@ module.exports = {
       night: '#1e8bc3',
     },
     animation: {
+      pulse: 'pulse 1.5s infinite',
       bounce: 'bounce 1s infinite',
     },
     backgroundImage: {
