@@ -32,7 +32,7 @@ const Project = ({ title, summary, skills, image, hostedLink, githubLink }) => {
         <div className="grid lg:grid-cols-2">
           <div className="p-2 font-medium text-dark dark:text-light">{summary}</div>
           <div>
-            <div className="p-2 flex flex-wrap gap-4">
+            <div className="p-2 flex flex-wrap gap-4 justify-center md:justify-normal">
               {skills?.map((skill) => (
                 <a
                   href={skill.link}
