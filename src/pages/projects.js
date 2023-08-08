@@ -9,8 +9,8 @@ import Project from '@/components/Project'
 const Projects = () => {
   return (
     <>
-      <div className="w-full mb-16 flex flex-col items-center justify-center mt-16 lg:pt-40 p-6 md:p-0">
-        <div className="pb-8">
+      <div className="w-full mb-16 flex flex-col items-center justify-center mt-16 lg:pt-40 lg:mt-40 p-6 md:p-0">
+        <div className="pb-12">
           <AnimatedText
             text={'Reality has limits. Imagination is boundless!'}
             className="lg:text-center px-4 text-5xl lg:text-6xl"
