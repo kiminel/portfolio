@@ -1,5 +1,5 @@
 import React from 'react'
-import { CustomLink } from '../elements/CustomLink'
+import Link from 'next/link'
 
 const Footer = () => {
   return (
@@ -7,12 +7,13 @@ const Footer = () => {
       <span className="text-xs text-light">
         {new Date().getFullYear()} &copy; All Rights Reserved
       </span>
-      <CustomLink
+      <Link
         href={'https://www.linkedin.com/in/kimi-monique-nel-67a289191/'}
-        title={'Kimi Monique Nel'}
         target="_blank"
         className="text-light"
-      />
+      >
+        Kimi Monique Nel
+      </Link>
     </footer>
   )
 }

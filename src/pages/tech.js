@@ -7,8 +7,12 @@ export const Tech = () => {
     <>
       <main className="w-full flex flex-col item-center justify-center px-4">
         <Layout className="py-8">
-          <TimeLine title={'Education'} details={educationDetails} />
-          <TimeLine title={'Experience'} details={experienceDetails} />
+          <div id='education'>
+            <TimeLine title={'Education'} details={educationDetails} />
+          </div>
+          <div id='experience'>
+            <TimeLine title={'Experience'} details={experienceDetails} />
+          </div>
         </Layout>
       </main>
     </>

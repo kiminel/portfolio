@@ -8,7 +8,7 @@ import Project from '@/components/Project'
 
 const Projects = () => {
   return (
-    <>
+    <div id='projects'>
       <div className="w-full mb-16 flex flex-col items-center justify-center mt-16 lg:pt-40 lg:mt-40 p-6 md:p-0">
         <div className="pb-12">
           <AnimatedText
@@ -124,7 +124,7 @@ const Projects = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 

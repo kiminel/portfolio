@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 
 const Skills = () => {
   return (
-    <>
+    <div id='skills'>
       <h2 className="w-full font-bold lg:mt-44 mt-12 lg:pt-40 lg:mb-8 text-5xl lg:text-7xl text-center dark:text-light">
         Skills
       </h2>
@@ -224,7 +224,7 @@ const Skills = () => {
           href={'https://www.figma.com/'}
         />
       </div>
-    </>
+    </div>
   )
 }
 

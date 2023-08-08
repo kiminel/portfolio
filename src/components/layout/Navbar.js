@@ -1,6 +1,4 @@
 import React, { useState } from 'react'
-import { CustomLink } from '../elements/CustomLink'
-import { CustomLinkMobile } from '../elements/CustomLinkMobile'
 import Moon from '../icons/Moon'
 import Sun from '../icons/Sun'
 import LinkedInLogo from '../icons/LinkedInLogo'
@@ -20,32 +18,67 @@ const Navbar = () => {
     setIsOpen(!isOpen)
   }
 
+  const scrollToHome = () => {
+    const section = document.querySelector(`#home`)
+    section.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    handleClick()
+  }
+  const scrollToSkills = () => {
+    const section = document.querySelector(`#skills`)
+    section.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    handleClick()
+  }
+  const scrollToEducation = () => {
+    const section = document.querySelector(`#education`)
+    section.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    handleClick()
+  }
+  const scrollToExperience = () => {
+    const section = document.querySelector(`#experience`)
+    section.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    handleClick()
+  }
+  const scrollToAbout = () => {
+    const section = document.querySelector(`#about`)
+    section.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    handleClick()
+  }
+  const scrollToProjects = () => {
+    const section = document.querySelector(`#projects`)
+    section.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    handleClick()
+  }
+
   return (
-    <header className="w-full px-32 py-8 font-medium flex items-center justify-between dark:border-b dark:border-light sticky top-0 z-50 bg-light dark:bg-dark shadow-lg">
+    <header className="w-full px-32 py-6 font-medium flex items-center justify-between dark:border-b dark:border-light sticky top-0 z-50 bg-light dark:bg-dark shadow-lg">
       <div className="absolute left-12 flex items-center justify-center mt-2">
         {!isOpen && (
           <Link href={'/'}>
-            <Logo className={'w-12 h-12 dark:text-light'} />
+            <Logo className={'w-8 h-8 md:w-12 md:h-12 dark:text-light'} />
           </Link>
         )}
       </div>
 
-      <button
-        className="absolute right-12 items-center justify-center mt-2 flex sm:hidden"
-        onClick={handleClick}
-      >
-        {!isOpen ? (
-          <HamburgerMenu className={'w-7 h-7 dark:text-light'} />
-        ) : (
-          <Xmark className={'w-7 h-7 dark:text-light'} />
-        )}
-      </button>
-
       <div className="w-full sm:flex justify-between items-center hidden">
-        <nav className="dark:text-light">
-          <CustomLink href={'/'} title={'Home'} className="mr-4" />
-          <CustomLink href={'/about'} title={'About'} className="mx-4" />
-          <CustomLink href={'/projects'} title={'Projects'} className="mx-4" />
+        <nav className="dark:text-light space-x-6">
+          <button onClick={scrollToHome} className="">
+            Home
+          </button>
+          <button onClick={scrollToSkills} className="">
+            Skills
+          </button>
+          <button onClick={scrollToEducation} className="">
+            Education
+          </button>
+          <button onClick={scrollToExperience} className="">
+            Experience
+          </button>
+          <button onClick={scrollToAbout} className="">
+            About
+          </button>
+          <button onClick={scrollToProjects} className="">
+            Projects
+          </button>
         </nav>
         <nav className="flex items-center justify-center flex-wrap space-x-2">
           <a
@@ -78,21 +111,41 @@ const Navbar = () => {
         </nav>
       </div>
 
+      <button
+        className="absolute right-12 items-center justify-center mt-2 flex sm:hidden"
+        onClick={handleClick}
+      >
+        {!isOpen ? <HamburgerMenu className={'w-7 h-7 dark:text-light'} /> : <></>}
+      </button>
+
       {isOpen ? (
         <motion.div
           initial={{ scale: 0, opacity: 0, x: '-50%', y: '-50%' }}
           animate={{ scale: 1, opacity: 1 }}
           className="min-w-[70vw] z-30 flex flex-col justify-between items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-dark/90 dark:bg-light/75 rounded-lg backdrop-blur-md py-32 text-light dark:text-dark"
         >
-          <nav className="flex items-center flex-col justify-center">
-            <CustomLinkMobile href={'/'} title={'Home'} className="" toggle={handleClick} />
-            <CustomLinkMobile href={'/about'} title={'About'} className="" toggle={handleClick} />
-            <CustomLinkMobile
-              href={'/projects'}
-              title={'Projects'}
-              className=""
-              toggle={handleClick}
-            />
+          <button onClick={handleClick} className="absolute top-0 right-0 pt-6 pr-6">
+            <Xmark className={'w-8 h-8 dark:text-light'} />
+          </button>
+          <nav className="dark:text-light flex flex-col gap-4">
+            <button onClick={scrollToHome} className="">
+              Home
+            </button>
+            <button onClick={scrollToSkills} className="">
+              Skills
+            </button>
+            <button onClick={scrollToEducation} className="">
+              Education
+            </button>
+            <button onClick={scrollToExperience} className="">
+              Experience
+            </button>
+            <button onClick={scrollToAbout} className="">
+              About
+            </button>
+            <button onClick={scrollToProjects} className="">
+              Projects
+            </button>
           </nav>
           <nav className="flex items-center justify-center flex-wrap space-x-6 mt-4">
             <a

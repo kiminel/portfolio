@@ -36,7 +36,7 @@ const About = () => {
   const [pic, setPic] = useState(false)
 
   return (
-    <div className="w-full grid md:grid-cols-3 gap-8 md:gap-16 items-center pt-8 md:pt-0">
+    <div id='about' className="w-full grid md:grid-cols-3 gap-8 md:gap-16 items-center pt-8 md:pt-0">
       <div className="col-span-1 flex flex-col items-start justify-center text-md md:text-lg py-6 order-2 md:order-1">
         <h2 className="mb-4 text-lg md:text-2xl font-bold uppercase text-dark/75 dark:text-light/75">
           Hi, I&apos;m Kimi!
