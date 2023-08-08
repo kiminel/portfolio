@@ -23,8 +23,24 @@ const Projects = () => {
               image={saFoodBlogCoverImage}
               title={'South African Food Blog'}
               summary={
-                'A food blog containing popular, traditional South African recipes. In this project I am focusing on learning GraphQL and using hygraphCMS to manage the content. React.js and Tailwind CSS has been used for the front-end. Future features will be launched periodically as part of an educational experiment - the feature Backlog is captured in the project README.md.'
+                'A food blog containing popular, traditional South African recipes. My main goal for this project was learning GraphQL and I used hygraphCMS to manage the content. I used the DALL-E AI to generate the colour-splashed animals and flag.'
               }
+              skills={[
+                { skill: 'React.js', link: 'https://react.dev/' },
+                {
+                  skill: 'react-router-dom',
+                  link: 'https://www.npmjs.com/package/react-router-dom',
+                },
+                {
+                  skill: 'JavaScript',
+                  link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
+                },
+                { skill: 'HTML', link: 'https://developer.mozilla.org/en-US/docs/Web/HTML' },
+                { skill: 'TailwindCSS', link: 'https://https://tailwindcss.com/' },
+                { skill: 'GraphQL', link: 'https://graphql.org/' },
+                { skill: 'graphql-request', link: 'https://www.npmjs.com/package/graphql-request' },
+                { skill: 'hygraphCMS', link: 'https://hygraph.com/' },
+              ]}
               hostedLink={'https://sa-food-blog.netlify.app/'}
               githubLink={'https://github.com/kiminel/food-blog'}
             />
@@ -35,8 +51,23 @@ const Projects = () => {
               image={chevonTutoringCoverImage}
               title={"Chevon's Tutoring Services"}
               summary={
-                'I am currently working with a client to build a website offering part-time Tutoring Services. The Tech Stack includes React, JavaScript, TailwindCSS and framer-motion. Additional tools include Canva and Adobe Express. I love creating interesting and engaging websites using movement and animations!'
+                'I am currently working with a client to build a website offering part-time Tutoring Services from a Qualified Teacher. I used Canva to create the classroom background art and Adobe Express to make moving stickers. I loved getting creative and incorporating movement!'
               }
+              skills={[
+                { skill: 'Canva', link: 'https://www.canva.com/' },
+                { skill: 'React.js', link: 'https://react.dev/' },
+                {
+                  skill: 'react-router-dom',
+                  link: 'https://www.npmjs.com/package/react-router-dom',
+                },
+                {
+                  skill: 'JavaScript',
+                  link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
+                },
+                { skill: 'HTML', link: 'https://developer.mozilla.org/en-US/docs/Web/HTML' },
+                { skill: 'TailwindCSS', link: 'https://https://tailwindcss.com/' },
+                { skill: 'framer-motion', link: 'https://www.framer.com/motion/' },
+              ]}
               hostedLink={'https://chevon-kuik-tutoring.netlify.app/'}
               githubLink={'https://github.com/kiminel/chevon-tutoring'}
             />
@@ -47,8 +78,26 @@ const Projects = () => {
               image={flowerPowerSpaCoverImage}
               title={'Flower Power Spa'}
               summary={
-                'In this basic brochure website, I played around with video animation capabilities. Further expansions include adding pages to the Header Titles, featuring more animation experiments. The Tech Stack includes React, Typescript, WindiCSS and framer-motion.'
+                'In this basic brochure website, I played around with video animation capabilities and the importance of server-side rendering for large-media. '
               }
+              skills={[
+                { skill: 'React.js', link: 'https://react.dev/' },
+                {
+                  skill: 'react-router-dom',
+                  link: 'https://www.npmjs.com/package/react-router-dom',
+                },
+                {
+                  skill: 'Vite',
+                  link: 'https://vitejs.dev/',
+                },
+                {
+                  skill: 'TypeScript',
+                  link: 'https://www.typescriptlang.org/docs/',
+                },
+                { skill: 'HTML', link: 'https://developer.mozilla.org/en-US/docs/Web/HTML' },
+                { skill: 'WindiCSS', link: 'https://windicss.org/' },
+                { skill: 'framer-motion', link: 'https://www.framer.com/motion/' },
+              ]}
               hostedLink={'https://flower-power-spa.netlify.app/'}
               githubLink={'https://github.com/kiminel/flower-power'}
             />
@@ -61,6 +110,14 @@ const Projects = () => {
               summary={
                 'The focus for this To-Do Planner was to learn the basics of Vue.js. I also used TailwindCSS for the first time and ended up loving it! I prefer using it in my personal projects - it makes styling easy to read and write and quick edit. As always, this website was built with the mobile-first mindset and is fully responsive.'
               }
+              skills={[
+                { skill: 'Vue.js', link: 'https://vuejs.org/' },
+                {
+                  skill: 'Vite',
+                  link: 'https://vitejs.dev/',
+                },
+                { skill: 'TailwindCSS', link: 'https://https://tailwindcss.com/' },
+              ]}
               hostedLink={'https://to-do-planner.vercel.app/'}
               githubLink={'https://github.com/kiminel/ToDo-Planner'}
             />
