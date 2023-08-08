@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 
 export const Layout = ({ children, className }) => {
   return (
@@ -7,5 +7,5 @@ export const Layout = ({ children, className }) => {
     >
       {children}
     </div>
-  );
-};
+  )
+}

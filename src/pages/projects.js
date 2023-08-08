@@ -1,5 +1,4 @@
 import React from "react";
-import Head from "next/head";
 import { Layout } from "@/components/layout/Layout";
 import { AnimatedText } from "@/components/elements/AnimatedText";
 import FeaturedProject from "@/components/FeaturedProject";
@@ -12,10 +11,6 @@ import Project from "@/components/Project";
 const Projects = () => {
   return (
     <>
-      <Head>
-        <title>Projects | Kimi Nel</title>
-        <meta name="projects" description="Showcase Projects"></meta>
-      </Head>
       <main className="w-full mb-16 flex flex-col items-center justify-center">
         <Layout>
           <div className="my-8">

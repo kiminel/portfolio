@@ -1,7 +1,6 @@
 import React, { useRef } from "react";
 import Details from "./layout/Details";
 import { motion, useScroll } from "framer-motion";
-import ListIcon from "./elements/ListIcon";
 
 const TimeLine = ({ title, details }) => {
   const ref = useRef(null);
