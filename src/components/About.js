@@ -34,8 +34,8 @@ const About = () => {
   const [pic, setPic] = useState(false)
 
   return (
-    <div className="w-full lg:grid grid-cols-8 gap-16 items-center">
-      <div className="col-span-3 flex flex-col items-start justify-center text-md md:text-lg py-6">
+    <div className="w-full lg:grid grid-cols-3 gap-16 items-center">
+      <div className="col-span-1 flex flex-col items-start justify-center text-md md:text-lg py-6">
         <h2 className="mb-4 text-lg md:text-2xl font-bold uppercase text-dark/75 dark:text-light/75">
           Hi, I&apos;m Kimi!
         </h2>
@@ -54,7 +54,7 @@ const About = () => {
         </p>
       </div>
 
-      <div className="relative col-span-3 h-max rounded-2xl border-2 border-solid border-dark bg-light p-4 dark:bg-dark dark:border-light dark:border-[1px]">
+      <div className="relative col-span-1 h-max rounded-2xl border-2 border-solid border-dark bg-light p-4 dark:bg-dark dark:border-light dark:border-[1px]">
         <div className="absolute top-0 -right-5 -z-10 w-[102%] h-[103%] rounded-2xl bg-dark dark:bg-light" />
 
         <div className="w-full flex flex-col justify-center items-center">
@@ -69,7 +69,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="h-full col-span-2 flex flex-col items-center lg:items-end justify-between dark:text-light py-8 gap-y-4 lg:gap-y-0">
+      <div className="h-full col-span-1 flex flex-col items-center lg:items-end justify-between dark:text-light py-8 gap-y-4 lg:gap-y-0">
         <div className="flex flex-col lg:items-end items-center lg:justify-center">
           <span className="inline-block text-7xl font-bold">
             <AnimatedNumbers value={4} />+

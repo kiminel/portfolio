@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 const Project = ({ title, summary, image, hostedLink, githubLink }) => {
   return (
-    <article className="flex flex-col lg:flex-row items-center p-4 gap-4 rounded-lg bg-light shadow-xl hover:shadow-dark dark:bg-dark dark:shadow-light/25 dark:text-light dark:hover:shadow-light">
+    <article className="flex flex-col lg:flex-row items-center p-4 gap-4 rounded-2xl bg-light shadow-xl hover:shadow-dark dark:bg-dark dark:shadow-light/25 dark:text-light dark:hover:shadow-light">
       <div className="w-full h-full">
         <Image
           src={image}
