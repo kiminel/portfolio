@@ -37,6 +37,7 @@ const Project = ({ title, summary, skills, image, hostedLink, githubLink }) => {
                 <a
                   href={skill.link}
                   target="_blank"
+                  key={skill.skill}
                   className="bg-primary/30 text-primary dark:bg-night/40 dark:text-night py-1 px-2 rounded-lg font-medium hover:bg-primary hover:text-light hover:dark:bg-night hover:dark:text-light"
                 >
                   {skill.skill}

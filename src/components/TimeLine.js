@@ -20,7 +20,7 @@ const TimeLine = ({ title, details }) => {
         <ul>
           {details.map((element) => {
             return (
-              <>
+              <div key={element.placeLink}>
                 <motion.div
                   style={{ scaleY: scrollYProgress }}
                   className="absolute left-0 top-2 w-[4px] h-full bg-dark origin-top dark:bg-light"
@@ -34,7 +34,7 @@ const TimeLine = ({ title, details }) => {
                   description={element.description}
                   key={element.title}
                 />
-              </>
+              </div>
             )
           })}
         </ul>
