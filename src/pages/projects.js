@@ -9,7 +9,7 @@ import Project from '@/components/Project'
 const Projects = () => {
   return (
     <>
-      <div className="w-full mb-16 flex flex-col items-center justify-center mt-16 lg:pt-40">
+      <div className="w-full mb-16 flex flex-col items-center justify-center mt-16 lg:pt-40 p-6 md:p-0">
         <div className="pb-8">
           <AnimatedText
             text={'Reality has limits. Imagination is boundless!'}
@@ -17,13 +17,13 @@ const Projects = () => {
           />
         </div>
 
-        <div className="grid grid-cols-2 gap-8 lg:gap-24 mt-4">
+        <div className="grid grid-cols-2 gap-14 lg:gap-24 mt-4">
           <div className="col-span-2 xl:col-span-1">
             <Project
               image={saFoodBlogCoverImage}
               title={'South African Food Blog'}
               summary={
-                'A food blog containing popular, traditional South African recipes. My main goal for this project was learning GraphQL and I used hygraphCMS to manage the content. I used the DALL-E AI to generate the colour-splashed animals and flag.'
+                'A food blog containing popular, traditional South African recipes. My main goal for this project was learning GraphQL and I used hygraphCMS to manage and experiment with the content. I used the DALL-E AI to generate the colour-splashed animals and flag.'
               }
               skills={[
                 { skill: 'React.js', link: 'https://react.dev/' },
@@ -51,7 +51,7 @@ const Projects = () => {
               image={chevonTutoringCoverImage}
               title={"Chevon's Tutoring Services"}
               summary={
-                'I am currently working with a client to build a website offering part-time Tutoring Services from a Qualified Teacher. I used Canva to create the classroom background art and Adobe Express to make moving stickers. I loved getting creative and incorporating movement!'
+                'I am currently working with a client to build a website offering part-time Tutoring Services from a Qualified Teacher. I used Canva to create the classroom background art and Adobe Express to make stickers. I loved getting creative and incorporating movement!'
               }
               skills={[
                 { skill: 'Canva', link: 'https://www.canva.com/' },
