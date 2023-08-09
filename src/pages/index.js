@@ -4,8 +4,8 @@ import Hero from '@/components/Hero'
 import Contact from '@/components/elements/Contact'
 import About from '@/components/About'
 import Skills from '@/components/Skills'
-import Tech from './tech'
-import Projects from './projects'
+import EducationExperience from '@/components/EducationExperience'
+import Projects from '@/components/Projects'
 
 export default function Home() {
   return (
@@ -20,7 +20,7 @@ export default function Home() {
           <Hero />
           <Contact />
           <Skills />
-          <Tech />
+          <EducationExperience />
           <About />
           <Projects />
         </Layout>

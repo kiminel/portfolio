@@ -2,7 +2,7 @@ import React from 'react'
 import { Layout } from '@/components/layout/Layout'
 import TimeLine from '@/components/TimeLine'
 
-export const Tech = () => {
+export const EducationExperience = () => {
   return (
     <>
       <main className="w-full flex flex-col item-center justify-center px-4">
@@ -64,4 +64,4 @@ const educationDetails = [
   },
 ]
 
-export default Tech
+export default EducationExperience
