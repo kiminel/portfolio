@@ -20,13 +20,13 @@ const Navbar = () => {
 
   const NavLinks = () => {
     return (
-      <div className="dark:text-light space-x-6">
+      <nav className="text-light md:text-dark dark:text-dark md:dark:text-light space-x-6 flex flex-col md:flex-row text-center pr-8 md:pr-0">
         <Link
           activeClass="active"
           smooth
           spy
           to="home"
-          className="hover:cursor-pointer hover:bg-dark hover:text-light p-2 rounded-lg"
+          className="hover:cursor-pointer hover:bg-dark hover:text-light p-2 rounded-lg pl-8 md:pl-2"
         >
           Home
         </Link>
@@ -75,7 +75,7 @@ const Navbar = () => {
         >
           Projects
         </Link>
-      </div>
+      </nav>
     )
   }
 
@@ -86,7 +86,7 @@ const Navbar = () => {
       </div>
 
       <div className="w-full sm:flex justify-between items-center hidden">
-        <nav className="">{NavLinks()}</nav>
+        {NavLinks()}
 
         <nav className="flex items-center justify-center flex-wrap space-x-2">
           <a
@@ -135,9 +135,7 @@ const Navbar = () => {
           <button onClick={handleClick} className="absolute top-0 right-0 pt-6 pr-6">
             <Xmark className={'w-8 h-8 text-light dark:text-dark'} />
           </button>
-          <nav className="flex flex-col text-center gap-4 text-light dark:text-dark">
-            {NavLinks()}
-          </nav>
+          {NavLinks()}
 
           <nav className="flex items-center justify-center flex-wrap space-x-6 mt-4">
             <a
