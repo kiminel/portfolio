@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import { Layout } from '@/components/layout/Layout'
 import Hero from '@/components/Hero'
-import Contact from '@/components/elements/Contact'
 import About from '@/components/About'
 import Skills from '@/components/Skills'
 import EducationExperience from '@/components/EducationExperience'
@@ -18,7 +17,6 @@ export default function Home() {
       <main className="flex text-dark w-full h-full px-2 lg:px-10">
         <Layout className="pt-8">
           <Hero />
-          <Contact />
           <Skills />
           <EducationExperience />
           <About />

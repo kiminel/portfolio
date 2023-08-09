@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import profilePic from '../../public/images/profile/Kimi_Wave.png'
 import NewTabArrow from '@/components/icons/NewTabArrow'
+import Contact from './elements/Contact'
 
 const Hero = () => {
   return (
@@ -39,6 +40,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
+      <Contact/>
     </div>
   )
 }
