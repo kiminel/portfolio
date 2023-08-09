@@ -20,26 +20,62 @@ const Navbar = () => {
 
   const NavLinks = () => {
     return (
-      <>
-        <Link activeClass="active" smooth spy to="home" className="hover:cursor-pointer">
+      <div className="dark:text-light space-x-6">
+        <Link
+          activeClass="active"
+          smooth
+          spy
+          to="home"
+          className="hover:cursor-pointer hover:bg-dark hover:text-light p-2 rounded-lg"
+        >
           Home
         </Link>
-        <Link activeClass="active" smooth spy to="skills" className="hover:cursor-pointer">
+        <Link
+          activeClass="active"
+          smooth
+          spy
+          to="skills"
+          className="hover:cursor-pointer hover:bg-dark hover:text-light p-2 rounded-lg"
+        >
           Skills
         </Link>
-        <Link activeClass="active" smooth spy to="education" className="hover:cursor-pointer">
+        <Link
+          activeClass="active"
+          smooth
+          spy
+          to="education"
+          className="hover:cursor-pointer hover:bg-dark hover:text-light p-2 rounded-lg"
+        >
           Education
         </Link>
-        <Link activeClass="active" smooth spy to="experience" className="hover:cursor-pointer">
+        <Link
+          activeClass="active"
+          smooth
+          spy
+          to="experience"
+          className="hover:cursor-pointer hover:bg-dark hover:text-light p-2 rounded-lg"
+        >
           Experience
         </Link>
-        <Link activeClass="active" smooth spy to="about" className="hover:cursor-pointer">
+        <Link
+          activeClass="active"
+          smooth
+          spy
+          to="about"
+          className="hover:cursor-pointer hover:bg-dark hover:text-light p-2 rounded-lg"
+        >
           About
         </Link>
-        <Link activeClass="active" smooth spy to="projects" className="hover:cursor-pointer">
+        <Link
+          activeClass="active"
+          smooth
+          spy
+          to="projects"
+          className="hover:cursor-pointer hover:bg-dark hover:text-light p-2 rounded-lg"
+        >
           Projects
         </Link>
-      </>
+      </div>
     )
   }
 
@@ -50,7 +86,7 @@ const Navbar = () => {
       </div>
 
       <div className="w-full sm:flex justify-between items-center hidden">
-        <nav className="dark:text-light space-x-6">{NavLinks()}</nav>
+        <nav className="">{NavLinks()}</nav>
 
         <nav className="flex items-center justify-center flex-wrap space-x-2">
           <a
