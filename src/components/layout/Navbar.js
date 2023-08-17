@@ -45,7 +45,7 @@ const Navbar = () => {
           activeClass="active"
           smooth
           spy
-          offset={-5}
+          offset={-25}
           to="education"
           className="hover:cursor-pointer hover:bg-dark hover:text-light p-2 rounded-lg"
         >
@@ -55,7 +55,7 @@ const Navbar = () => {
           activeClass="active"
           smooth
           spy
-          offset={-5}
+          offset={-25}
           to="experience"
           className="hover:cursor-pointer hover:bg-dark hover:text-light p-2 rounded-lg"
         >
