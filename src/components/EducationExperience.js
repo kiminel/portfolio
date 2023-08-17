@@ -1,19 +1,16 @@
 import React from 'react'
-import { Layout } from '@/components/layout/Layout'
 import TimeLine from '@/components/TimeLine'
 
 export const EducationExperience = () => {
   return (
     <>
       <main className="w-full flex flex-col item-center justify-center px-4">
-        <Layout className="py-8">
-          <div id='education'>
-            <TimeLine title={'Education'} details={educationDetails} />
-          </div>
-          <div id='experience'>
-            <TimeLine title={'Experience'} details={experienceDetails} />
-          </div>
-        </Layout>
+        <div id="education">
+          <TimeLine title={'Education'} details={educationDetails} />
+        </div>
+        <div id="experience">
+          <TimeLine title={'Experience'} details={experienceDetails} />
+        </div>
       </main>
     </>
   )
@@ -43,6 +40,7 @@ const experienceDetails = [
 const educationDetails = [
   {
     title: 'Bachelor of Science in Information Technology',
+    titleLink: '/BScIT.pdf',
     place: 'Pearson Institute of Higher Education',
     placeLink: 'https://www.pearson.com/en-us.html',
     time: 'obtained in 2020',
@@ -50,6 +48,7 @@ const educationDetails = [
   },
   {
     title: 'Higher Certificate in Information Systems Engineering',
+    titleLink: '/HCISE.pdf',
     place: 'CTI Education Group',
     placeLink: 'https://www.facebook.com/ctieducationgroup/',
     time: 'obtained in 2017',

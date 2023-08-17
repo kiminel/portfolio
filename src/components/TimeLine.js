@@ -27,6 +27,7 @@ const TimeLine = ({ title, details }) => {
                 />
                 <Details
                   title={element.title}
+                  titleLink={element.titleLink ?? ''}
                   place={element.place}
                   placeLink={element.placeLink}
                   time={element.time}

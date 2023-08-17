@@ -14,7 +14,7 @@ export default function Home() {
         <meta name="portfolio" content="Showcase developer journey and skills" />
       </Head>
 
-      <main className="flex text-dark w-full h-full px-2 lg:px-10">
+      <main className="flex text-dark w-full h-full">
         <Layout className="pt-8">
           <Hero />
           <Skills />
