@@ -25,6 +25,7 @@ const Navbar = () => {
           activeClass="active"
           smooth
           spy
+          offset={-95}
           to="home"
           className="hover:cursor-pointer hover:bg-dark hover:text-light p-2 rounded-lg pl-8 md:pl-2"
         >
@@ -34,6 +35,7 @@ const Navbar = () => {
           activeClass="active"
           smooth
           spy
+          offset={50}
           to="skills"
           className="hover:cursor-pointer hover:bg-dark hover:text-light p-2 rounded-lg"
         >
@@ -43,6 +45,7 @@ const Navbar = () => {
           activeClass="active"
           smooth
           spy
+          offset={-95}
           to="education"
           className="hover:cursor-pointer hover:bg-dark hover:text-light p-2 rounded-lg"
         >
@@ -52,6 +55,7 @@ const Navbar = () => {
           activeClass="active"
           smooth
           spy
+          offset={-95}
           to="experience"
           className="hover:cursor-pointer hover:bg-dark hover:text-light p-2 rounded-lg"
         >
@@ -61,6 +65,7 @@ const Navbar = () => {
           activeClass="active"
           smooth
           spy
+          offset={-95}
           to="about"
           className="hover:cursor-pointer hover:bg-dark hover:text-light p-2 rounded-lg"
         >
@@ -70,6 +75,7 @@ const Navbar = () => {
           activeClass="active"
           smooth
           spy
+          offset={-95}
           to="projects"
           className="hover:cursor-pointer hover:bg-dark hover:text-light p-2 rounded-lg"
         >

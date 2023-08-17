@@ -17,5 +17,7 @@ This project is my official Portfolio website, which contains my contact details
 ## Tech Stack
 
 - [React.js](https://react.dev/)
-- [Tailwind css](https://tailwindcss.com/) <br />
-- [framer-motion](https://www.framer.com/motion/) <br />
+- [Next.js](https://nextjs.org/)
+- [Tailwind css](https://tailwindcss.com/)
+- [framer-motion](https://www.framer.com/motion/)
+- [react-scroll](https://www.npmjs.com/package/react-scroll)
