@@ -1,18 +1,18 @@
-import React from 'react'
-import { AnimatedText } from '@/components/elements/AnimatedText'
-import saFoodBlogCoverImage from '../../public/images/projects/SA-Food-Blog.png'
-import flowerPowerSpaCoverImage from '../../public/images/projects/Flower-Power-Spa.png'
-import chevonTutoringCoverImage from '../../public/images/projects/Chevon-Tutoring.png'
-import toDoPlannerCoverImage from '../../public/images/projects/To-Do-Planner.png'
-import Project from '@/components/Project'
+import React from "react";
+import { AnimatedText } from "@/components/elements/AnimatedText";
+import saFoodBlogCoverImage from "../../public/images/projects/SA-Food-Blog.png";
+import spaceX from "../../public/images/projects/SpaceX.png";
+import chevonTutoringCoverImage from "../../public/images/projects/Chevon-Tutoring.png";
+import toDoPlannerCoverImage from "../../public/images/projects/To-Do-Planner.png";
+import Project from "@/components/Project";
 
 const Projects = () => {
   return (
-    <div id='projects'>
+    <div id="projects">
       <div className="w-full mb-16 flex flex-col items-center justify-center mt-16 lg:pt-40 lg:mt-40 p-6 md:p-0">
         <div className="pb-12">
           <AnimatedText
-            text={'Reality has limits. Imagination is boundless!'}
+            text={"Reality has limits. Imagination is boundless!"}
             className="lg:text-center px-4 text-5xl lg:text-6xl"
           />
         </div>
@@ -20,29 +20,85 @@ const Projects = () => {
         <div className="grid grid-cols-2 gap-14 lg:gap-24 mt-4">
           <div className="col-span-2 xl:col-span-1">
             <Project
-              image={saFoodBlogCoverImage}
-              title={'South African Food Blog'}
+              image={spaceX}
+              title={"SpaceX"}
               summary={
-                'A food blog containing popular, traditional South African recipes. My main goal for this project was learning GraphQL and I used hygraphCMS to manage and experiment with the content. I used the DALL-E AI to generate the colour-splashed animals and flag.'
+                "I used the publicly available SpaceX API to build this concept website using the latest technologies and trends. Instead of using packages to help with scrolling animations, I opted for pure JavaScript to showcase how different React Hooks operate."
               }
               skills={[
-                { skill: 'React.js', link: 'https://react.dev/' },
+                { skill: "React.js", link: "https://react.dev/" },
                 {
-                  skill: 'react-router-dom',
-                  link: 'https://www.npmjs.com/package/react-router-dom',
+                  skill: "Next.js 13",
+                  link: "https://nextjs.org/",
                 },
                 {
-                  skill: 'JavaScript',
-                  link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
+                  skill: "JavaScript",
+                  link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
                 },
-                { skill: 'HTML', link: 'https://developer.mozilla.org/en-US/docs/Web/HTML' },
-                { skill: 'TailwindCSS', link: 'https://https://tailwindcss.com/' },
-                { skill: 'GraphQL', link: 'https://graphql.org/' },
-                { skill: 'graphql-request', link: 'https://www.npmjs.com/package/graphql-request' },
-                { skill: 'hygraphCMS', link: 'https://hygraph.com/' },
+                {
+                  skill: "HTML",
+                  link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
+                },
+                {
+                  skill: "Tailwind CSS",
+                  link: "https://tailwindcss.com/",
+                },
+                {
+                  skill: "MaterialUI",
+                  link: "https://mui.com/",
+                },
+                {
+                  skill: "MUI icons",
+                  link: "https://mui.com/material-ui/material-icons/",
+                },
+                {
+                  skill: "SpaceX API",
+                  link: "https://github.com/r-spacex/SpaceX-API",
+                },
+                {
+                  skill: "react-moment",
+                  link: "https://www.npmjs.com/package/react-moment",
+                },
               ]}
-              hostedLink={'https://sa-food-blog.netlify.app/'}
-              githubLink={'https://github.com/kiminel/food-blog'}
+              hostedLink={"https://spacex-concept.vercel.app/"}
+              githubLink={"https://github.com/kiminel/sapcex"}
+            />
+          </div>
+
+          <div className="col-span-2 xl:col-span-1">
+            <Project
+              image={saFoodBlogCoverImage}
+              title={"South African Food Blog"}
+              summary={
+                "A food blog containing popular, traditional South African recipes. My main goal for this project was learning GraphQL and I used hygraphCMS to manage and experiment with the content. I used the DALL-E AI to generate the colour-splashed animals and flag."
+              }
+              skills={[
+                { skill: "React.js", link: "https://react.dev/" },
+                {
+                  skill: "react-router-dom",
+                  link: "https://www.npmjs.com/package/react-router-dom",
+                },
+                {
+                  skill: "JavaScript",
+                  link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+                },
+                {
+                  skill: "HTML",
+                  link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
+                },
+                {
+                  skill: "Tailwind CSS",
+                  link: "https://https://tailwindcss.com/",
+                },
+                { skill: "GraphQL", link: "https://graphql.org/" },
+                {
+                  skill: "graphql-request",
+                  link: "https://www.npmjs.com/package/graphql-request",
+                },
+                { skill: "hygraphCMS", link: "https://hygraph.com/" },
+              ]}
+              hostedLink={"https://sa-food-blog.netlify.app/"}
+              githubLink={"https://github.com/kiminel/food-blog"}
             />
           </div>
 
@@ -51,81 +107,63 @@ const Projects = () => {
               image={chevonTutoringCoverImage}
               title={"Chevon's Tutoring Services"}
               summary={
-                'I am currently working with a client to build a website offering part-time Tutoring Services from a Qualified Teacher. I used Canva to create the classroom background art and Adobe Express to make stickers. I loved getting creative and incorporating movement!'
+                "For this simple Brochure Website, I worked with a client offering part-time Tutoring Services from a Qualified Teacher. I used Canva and Adobe Express to create all of the art, including the classroom background and moving Stickers. I loved getting creative and incorporating movement!"
               }
               skills={[
-                { skill: 'Canva', link: 'https://www.canva.com/' },
-                { skill: 'React.js', link: 'https://react.dev/' },
+                { skill: "Canva", link: "https://www.canva.com/" },
+                { skill: "React.js", link: "https://react.dev/" },
                 {
-                  skill: 'react-router-dom',
-                  link: 'https://www.npmjs.com/package/react-router-dom',
+                  skill: "react-router-dom",
+                  link: "https://www.npmjs.com/package/react-router-dom",
                 },
                 {
-                  skill: 'JavaScript',
-                  link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
+                  skill: "JavaScript",
+                  link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
                 },
-                { skill: 'HTML', link: 'https://developer.mozilla.org/en-US/docs/Web/HTML' },
-                { skill: 'TailwindCSS', link: 'https://https://tailwindcss.com/' },
-                { skill: 'framer-motion', link: 'https://www.framer.com/motion/' },
+                {
+                  skill: "HTML",
+                  link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
+                },
+                {
+                  skill: "Tailwind CSS",
+                  link: "https://https://tailwindcss.com/",
+                },
+                {
+                  skill: "framer-motion",
+                  link: "https://www.framer.com/motion/",
+                },
               ]}
-              hostedLink={'https://chevon-kuik-tutoring.netlify.app/'}
-              githubLink={'https://github.com/kiminel/chevon-tutoring'}
-            />
-          </div>
-
-          <div className="col-span-2 xl:col-span-1">
-            <Project
-              image={flowerPowerSpaCoverImage}
-              title={'Flower Power Spa'}
-              summary={
-                'In this basic brochure website, I played around with video animation capabilities and the importance of server-side rendering for large-media. '
-              }
-              skills={[
-                { skill: 'React.js', link: 'https://react.dev/' },
-                {
-                  skill: 'react-router-dom',
-                  link: 'https://www.npmjs.com/package/react-router-dom',
-                },
-                {
-                  skill: 'Vite',
-                  link: 'https://vitejs.dev/',
-                },
-                {
-                  skill: 'TypeScript',
-                  link: 'https://www.typescriptlang.org/docs/',
-                },
-                { skill: 'HTML', link: 'https://developer.mozilla.org/en-US/docs/Web/HTML' },
-                { skill: 'WindiCSS', link: 'https://windicss.org/' },
-                { skill: 'framer-motion', link: 'https://www.framer.com/motion/' },
-              ]}
-              hostedLink={'https://flower-power-spa.netlify.app/'}
-              githubLink={'https://github.com/kiminel/flower-power'}
+              hostedLink={"https://chevon-kuik-tutoring.netlify.app/"}
+              githubLink={"https://github.com/kiminel/chevon-tutoring"}
             />
           </div>
 
           <div className="col-span-2 xl:col-span-1">
             <Project
               image={toDoPlannerCoverImage}
-              title={'To-Do Planner'}
+              title={"To-Do Planner"}
               summary={
-                'The focus for this To-Do Planner was to learn the basics of Vue.js. I also used TailwindCSS for the first time and ended up loving it! As always, this website was built with the mobile-first mindset and is fully responsive.'
+                "The main goal for this To-Do Planner was to learn the basics of Vue.js. I also used Tailwind CSS for the first time and ended up loving it! As always, this website was built with the mobile-first mindset and is fully responsive."
               }
               skills={[
-                { skill: 'Vue.js', link: 'https://vuejs.org/' },
+                { skill: "Vue.js", link: "https://vuejs.org/" },
                 {
-                  skill: 'Vite',
-                  link: 'https://vitejs.dev/',
+                  skill: "Vite",
+                  link: "https://vitejs.dev/",
                 },
-                { skill: 'TailwindCSS', link: 'https://https://tailwindcss.com/' },
+                {
+                  skill: "Tailwind CSS",
+                  link: "https://https://tailwindcss.com/",
+                },
               ]}
-              hostedLink={'https://to-do-planner.vercel.app/'}
-              githubLink={'https://github.com/kiminel/ToDo-Planner'}
+              hostedLink={"https://to-do-planner.vercel.app/"}
+              githubLink={"https://github.com/kiminel/ToDo-Planner"}
             />
           </div>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Projects
+export default Projects;
