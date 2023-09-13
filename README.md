@@ -12,7 +12,7 @@
 
 ## About
 
-This project is my official Portfolio website, which contains my contact details, showcase projects and CV.
+My Portfolio website, which contains contact details, showcase projects and CV.
 
 ## Tech Stack
 
