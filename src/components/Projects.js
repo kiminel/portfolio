@@ -1,7 +1,7 @@
 import React from "react";
 import { AnimatedText } from "@/components/elements/AnimatedText";
 import saFoodBlogCoverImage from "../../public/images/projects/SA-Food-Blog.png";
-import spaceXCoverImage from "../../public/images/projects/SpaceX.png";
+import spaceXCoverImage from "../../public/images/projects/Space-X.png";
 import chevonTutoringCoverImage from "../../public/images/projects/Chevon-Tutoring.png";
 import toDoPlannerCoverImage from "../../public/images/projects/To-Do-Planner.png";
 import Project from "@/components/Project";
