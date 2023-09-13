@@ -1,7 +1,7 @@
 import React from "react";
 import { AnimatedText } from "@/components/elements/AnimatedText";
 import saFoodBlogCoverImage from "../../public/images/projects/SA-Food-Blog.png";
-import spaceX from "../../public/images/projects/SpaceX.png";
+import spaceXCoverImage from "../../public/images/projects/SpaceX.png";
 import chevonTutoringCoverImage from "../../public/images/projects/Chevon-Tutoring.png";
 import toDoPlannerCoverImage from "../../public/images/projects/To-Do-Planner.png";
 import Project from "@/components/Project";
@@ -20,7 +20,7 @@ const Projects = () => {
         <div className="grid grid-cols-2 gap-14 lg:gap-24 mt-4">
           <div className="col-span-2 xl:col-span-1">
             <Project
-              image={spaceX}
+              image={spaceXCoverImage}
               title={"SpaceX"}
               summary={
                 "I used the publicly available SpaceX API to build this concept website using the latest technologies and trends. Instead of using packages to help with scrolling animations, I opted for pure JavaScript to showcase how different React Hooks operate."
