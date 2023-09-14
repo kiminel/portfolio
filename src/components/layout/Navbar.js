@@ -115,11 +115,9 @@ const Navbar = () => {
 
   return (
     <header className="w-full px-8 py-8 md:py-6 font-medium flex items-center justify-between dark:border-b dark:border-light sticky top-0 z-50 bg-light dark:bg-dark shadow-lg">
-      {!isOpen && (
-        <div className="absolute left-6 flex items-center justify-center">
-          <Logo className={"w-12 h-12 dark:text-light"} />
-        </div>
-      )}
+      <div className="absolute left-6 flex items-center justify-center">
+        <Logo className={"w-12 h-12 dark:text-light"} />
+      </div>
 
       <div id="desktop-view" className="w-full md:grid hidden grid-cols-4">
         <div className="col-span-3 pl-8">{NavLinks()}</div>
