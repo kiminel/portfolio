@@ -26,7 +26,7 @@ const Navbar = () => {
           spy
           offset={-200}
           to="home"
-          className="md:ml-8 hover:cursor-pointer hover:bg-dark hover:text-light dark:md:hover:bg-light dark:md:hover:text-dark p-2 rounded-lg"
+          className="md:ml-8 hover:cursor-pointer hover:bg-light hover:text-dark md:hover:bg-dark md:hover:text-light dark:md:hover:bg-light dark:md:hover:text-dark p-2 rounded-lg"
         >
           Home
         </Link>
@@ -35,7 +35,7 @@ const Navbar = () => {
           spy
           offset={50}
           to="skills"
-          className="hover:cursor-pointer hover:bg-dark hover:text-light dark:md:hover:bg-light dark:md:hover:text-dark p-2 rounded-lg"
+          className="hover:cursor-pointer hover:bg-light hover:text-dark md:hover:bg-dark md:hover:text-light dark:md:hover:bg-light dark:md:hover:text-dark p-2 rounded-lg"
         >
           Skills
         </Link>
@@ -44,7 +44,7 @@ const Navbar = () => {
           spy
           offset={-25}
           to="education"
-          className="hover:cursor-pointer hover:bg-dark hover:text-light dark:md:hover:bg-light dark:md:hover:text-dark p-2 rounded-lg"
+          className="hover:cursor-pointer hover:bg-light hover:text-dark md:hover:bg-dark md:hover:text-light dark:md:hover:bg-light dark:md:hover:text-dark p-2 rounded-lg"
         >
           Education
         </Link>
@@ -53,7 +53,7 @@ const Navbar = () => {
           spy
           offset={-25}
           to="experience"
-          className="hover:cursor-pointer hover:bg-dark hover:text-light dark:md:hover:bg-light dark:md:hover:text-dark p-2 rounded-lg"
+          className="hover:cursor-pointer hover:bg-light hover:text-dark md:hover:bg-dark md:hover:text-light dark:md:hover:bg-light dark:md:hover:text-dark p-2 rounded-lg"
         >
           Experience
         </Link>
@@ -62,7 +62,7 @@ const Navbar = () => {
           spy
           offset={-95}
           to="about"
-          className="hover:cursor-pointer hover:bg-dark hover:text-light dark:md:hover:bg-light dark:md:hover:text-dark p-2 rounded-lg"
+          className="hover:cursor-pointer hover:bg-light hover:text-dark md:hover:bg-dark md:hover:text-light dark:md:hover:bg-light dark:md:hover:text-dark p-2 rounded-lg"
         >
           About
         </Link>
@@ -71,7 +71,7 @@ const Navbar = () => {
           spy
           offset={-95}
           to="projects"
-          className="hover:cursor-pointer hover:bg-dark hover:text-light dark:md:hover:bg-light dark:md:hover:text-dark p-2 rounded-lg"
+          className="hover:cursor-pointer hover:bg-light hover:text-dark md:hover:bg-dark md:hover:text-light dark:md:hover:bg-light dark:md:hover:text-dark p-2 rounded-lg"
         >
           Projects
         </Link>
