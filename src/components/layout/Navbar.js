@@ -85,14 +85,14 @@ const Navbar = () => {
         <a
           href={"https://www.linkedin.com/in/kimi-monique-nel-67a289191"}
           target={"_blank"}
-          className="bg-dark text-light border-[2px] p-2 rounded-full hover:-translate-y-1 transition duration-200 hover:bg-light hover:border-solid hover:text-dark dark:bg-light dark:text-dark dark:hover:bg-dark dark:hover:text-light"
+          className="bg-dark text-light border-2 p-2 rounded-full hover:-translate-y-1 transition duration-200 hover:bg-light hover:border-solid hover:text-dark dark:bg-light dark:text-dark dark:hover:bg-dark dark:hover:text-light"
         >
           <LinkedInLogo className={"h-4 w-4"} />
         </a>
         <a
           href={"https://github.com/kiminel"}
           target={"_blank"}
-          className="hover:-translate-y-1 transition duration-200 bg-dark text-light border-[2px] rounded-full p-1 hover:bg-light hover:border-solid hover:text-dark dark:bg-light dark:text-dark dark:hover:bg-dark dark:hover:text-light"
+          className="hover:-translate-y-1 transition duration-200 bg-dark text-light border-2 rounded-full p-1 hover:bg-light hover:border-solid hover:text-dark dark:bg-light dark:text-dark dark:hover:bg-dark dark:hover:text-light"
         >
           <GithubLogo className={"h-6 w-6"} />
         </a>
@@ -104,9 +104,9 @@ const Navbar = () => {
           }}
         >
           {mode === "light" ? (
-            <Moon className="h-9 w-9 bg-dark text-light border-[2px] rounded-full p-1 hover:bg-light hover:border-solid hover:text-dark dark:text-light dark:hover:text-dark" />
+            <Moon className="h-9 w-9 bg-dark text-light border-2 rounded-full p-1 hover:bg-light hover:border-solid hover:text-dark dark:text-light dark:hover:text-dark" />
           ) : (
-            <Sun className="h-9 w-9 bg-light text-dark border-[2px] rounded-full p-1 hover:bg-dark hover:border-solid hover:text-light dark:text-dark dark:hover:text-light" />
+            <Sun className="h-9 w-9 bg-light text-dark border-2 rounded-full p-1 hover:bg-dark hover:border-solid hover:text-light dark:text-dark dark:hover:text-light" />
           )}
         </button>
       </nav>
