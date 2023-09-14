@@ -45,18 +45,19 @@ const About = () => {
           Hi, I&apos;m Kimi!
         </h2>
         <p className="font-medium dark:text-light">
-          I am a Software Engineer/ Full Stack Developer with a passion for
-          creating beautiful, responsive websites!
+          I am a Full Stack / Front-End Developer with a passion for creating
+          beautiful, responsive websites!
         </p>
         <p className="font-medium my-4 dark:text-light">
-          I enjoy exploring the latest standards and optimizing the projects
-          that I work on. I am also a bookworm and often read educational books
-          to understand and avoid common mistakes around coding, business
-          management and teamwork.
+          I enjoy exploring and experimenting with the latest trends and
+          technologies as well as optimizing the projects that I work on. I am a
+          bookworm and often read educational books to understand and avoid
+          common mistakes around coding, business management and teamwork.
         </p>
         <p className="font-medium dark:text-light">
           I take pride in writing well-tested, clean code. I sleep easy at
-          night, knowing that at the end of the day, my code WILL be legacy!
+          night, knowing at the end of the day,{" "}
+          <span className="italic">my code will be legacy!</span>
         </p>
       </div>
 

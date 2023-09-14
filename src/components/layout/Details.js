@@ -21,11 +21,12 @@ const Details = ({
       <motion.div
         className="p-4 rounded-2xl shadow-2xl dark:shadow-light"
         initial={{ scale: 0 }}
-        animate={{ rotate: 360, scale: 1 }}
+        whileInView={{ ease: "easeIn", scale: 1 }}
+        viewport={{ once: true }}
         transition={{
-          type: "spring",
           stiffness: 260,
           damping: 20,
+          duration: 1,
         }}
       >
         <h3 className="font-bold text-md md:text-3xl dark:text-light">

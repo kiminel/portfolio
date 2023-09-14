@@ -1,16 +1,17 @@
-import React from 'react'
-import Image from 'next/image'
-import Link from 'next/link'
-import { motion } from 'framer-motion'
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { motion } from "framer-motion";
 
 const Project = ({ title, summary, skills, image, hostedLink, githubLink }) => {
   return (
     <>
       <motion.div
         initial={{ scale: 0 }}
-        animate={{ rotate: 360, scale: 1 }}
+        whileInView={{ rotate: 360, scale: 1 }}
+        viewport={{ once: true }}
         transition={{
-          type: 'spring',
+          type: "spring",
           stiffness: 260,
           damping: 20,
         }}
@@ -19,7 +20,11 @@ const Project = ({ title, summary, skills, image, hostedLink, githubLink }) => {
       >
         <Link href={hostedLink} target="_blank">
           <div className="w-auto h-full flex justify-center">
-            <Image src={image} alt={title} className="w-auto h-full min-w-[200px]" />
+            <Image
+              src={image}
+              alt={title}
+              className="w-auto h-full min-w-[200px]"
+            />
           </div>
         </Link>
 
@@ -30,7 +35,9 @@ const Project = ({ title, summary, skills, image, hostedLink, githubLink }) => {
         </Link>
 
         <div className="grid lg:grid-cols-2">
-          <div className="p-2 font-medium text-dark dark:text-light">{summary}</div>
+          <div className="p-2 font-medium text-dark dark:text-light">
+            {summary}
+          </div>
           <div>
             <div className="p-2 flex flex-wrap gap-4 justify-center md:justify-normal">
               {skills?.map((skill) => (
@@ -65,7 +72,7 @@ const Project = ({ title, summary, skills, image, hostedLink, githubLink }) => {
         </div>
       </motion.div>
     </>
-  )
-}
+  );
+};
 
-export default Project
+export default Project;
