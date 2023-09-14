@@ -34,7 +34,8 @@ export const AnimatedText = ({ text, className = "" }) => {
         className={`inline-block w-full text-dark font-bold dark:text-light ${className}`}
         variants={quote}
         initial="initial"
-        animate="animate"
+        whileInView="animate"
+        viewport={{ once: false }}
       >
         {text.split(" ").map((word, index) => (
           <motion.span

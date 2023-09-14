@@ -1,12 +1,13 @@
 import React from "react";
 import Skill from "./Skill";
 import { motion } from "framer-motion";
+import { AnimatedText } from "./elements/AnimatedText";
 
 const Skills = () => {
   return (
     <div id="skills" className="lg:px-20">
       <h2 className="w-full font-bold lg:mt-44 mt-12 lg:pt-40 pb-4 lg:pb-0 lg:mb-8 text-5xl lg:text-7xl text-center dark:text-light">
-        Skills
+        <AnimatedText text="Skills" />
       </h2>
 
       <div
