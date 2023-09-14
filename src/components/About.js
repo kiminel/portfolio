@@ -89,7 +89,7 @@ const About = () => {
           </h2>
         </div>
 
-        <div className="flex flex-col lg:items-end items-center">
+        <div className="flex flex-col lg:items-end items-center text-end">
           <span className="inline-block text-7xl font-bold">
             <AnimatedNumbers value={10} />+
           </span>
