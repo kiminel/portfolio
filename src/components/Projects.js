@@ -1,7 +1,8 @@
 import React from "react";
 import { AnimatedText } from "@/components/elements/AnimatedText";
-import saFoodBlogCoverImage from "../../public/images/projects/SA-Food-Blog.png";
 import spaceXCoverImage from "../../public/images/projects/Space-X.png";
+import iPhoneCoverImage from "../../public/images/projects/iPhone.png";
+import saFoodBlogCoverImage from "../../public/images/projects/SA-Food-Blog.png";
 import chevonTutoringCoverImage from "../../public/images/projects/Chevon-Tutoring.png";
 import toDoPlannerCoverImage from "../../public/images/projects/To-Do-Planner.png";
 import Project from "@/components/Project";
@@ -62,6 +63,45 @@ const Projects = () => {
               ]}
               hostedLink={"https://spacex-concept.vercel.app/"}
               githubLink={"https://github.com/kiminel/sapcex"}
+            />
+          </div>
+
+          <div className="col-span-2 xl:col-span-1">
+            <Project
+              image={iPhoneCoverImage}
+              title={"iPhone"}
+              summary={
+                "This iPhone concept website incorporates 3D animations that change when the user scrolls on the page. Additionally, the user can preview and interact with the phone model."
+              }
+              skills={[
+                { skill: "React.js", link: "https://react.dev/" },
+                {
+                  skill: "Vite",
+                  link: "https://vitejs.dev/",
+                },
+                {
+                  skill: "Three.js",
+                  link: "https://threejs.org/",
+                },
+                {
+                  skill: "WebGi SDK",
+                  link: "https://webgi.xyz/",
+                },
+                {
+                  skill: "GSAP",
+                  link: "https://greensock.com/gsap//",
+                },
+                {
+                  skill: "Pure CSS",
+                  link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
+                },
+                {
+                  skill: "Sketchfab",
+                  link: "https://sketchfab.com/3d-models/iphone-13-pro-max-4f92b60d824a42c89bbf1833374c4f73",
+                },
+              ]}
+              hostedLink={"https://iphone-concept.vercel.app/"}
+              githubLink={"https://github.com/kiminel/iphone"}
             />
           </div>
 
