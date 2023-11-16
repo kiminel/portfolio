@@ -1,10 +1,10 @@
 import React from "react";
+import Link from "next/link";
 import { AnimatedText } from "@/components/elements/AnimatedText";
 import spaceXCoverImage from "../../public/images/projects/Space-X.png";
 import iPhoneCoverImage from "../../public/images/projects/iPhone.png";
 import saFoodBlogCoverImage from "../../public/images/projects/SA-Food-Blog.png";
-import chevonTutoringCoverImage from "../../public/images/projects/Chevon-Tutoring.png";
-import toDoPlannerCoverImage from "../../public/images/projects/To-Do-Planner.png";
+import eatCuriousCloneCoverImage from "../../public/images/projects/Eat-Curious-Clone.png";
 import Project from "@/components/Project";
 
 const Projects = () => {
@@ -22,23 +22,19 @@ const Projects = () => {
           <div className="col-span-2 xl:col-span-1">
             <Project
               image={spaceXCoverImage}
-              title={"SpaceX"}
+              title={"SpaceX Launches"}
               summary={
                 "I used the publicly available SpaceX API to build this concept website using the latest technologies and trends. Instead of using packages to help with scrolling animations, I opted for pure JavaScript to showcase how different React Hooks operate."
               }
               skills={[
                 { skill: "React.js", link: "https://react.dev/" },
                 {
-                  skill: "Next.js 13",
+                  skill: "Next.js",
                   link: "https://nextjs.org/",
                 },
                 {
                   skill: "JavaScript",
                   link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-                },
-                {
-                  skill: "HTML",
-                  link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
                 },
                 {
                   skill: "Tailwind CSS",
@@ -68,8 +64,51 @@ const Projects = () => {
 
           <div className="col-span-2 xl:col-span-1">
             <Project
+              image={eatCuriousCloneCoverImage}
+              title={"Eat Curious Clone"}
+              summary={
+                "I used the Official Eat-Curious website to build this clone, using the latest technologies and trends. I experimented with animations, including Parallax effects, Image- and Text Carousels, Marquees, Hover- and Click Effects, Scrolling Animations and more."
+              }
+              skills={[
+                { skill: "React.js", link: "https://react.dev/" },
+                {
+                  skill: "Next.js",
+                  link: "https://nextjs.org/",
+                },
+                {
+                  skill: "JavaScript",
+                  link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+                },
+                {
+                  skill: "Tailwind CSS",
+                  link: "https://https://tailwindcss.com/",
+                },
+                {
+                  skill: "framer-motion",
+                  link: "https://www.framer.com/motion/",
+                },
+                {
+                  skill: "react-intersection-observer",
+                  link: "https://www.npmjs.com/package/react-intersection-observer",
+                },
+                {
+                  skill: "react-slick",
+                  link: "https://www.npmjs.com/package/react-slick",
+                },
+                {
+                  skill: "slick-carousel",
+                  link: "https://www.npmjs.com/package/slick-carousel",
+                },
+              ]}
+              hostedLink={"https://eat-curious-clone.vercel.app/"}
+              githubLink={"https://github.com/kiminel/eat-curious-clone"}
+            />
+          </div>
+
+          <div className="col-span-2 xl:col-span-1">
+            <Project
               image={iPhoneCoverImage}
-              title={"iPhone"}
+              title={"iPhone 3D Showcase"}
               summary={
                 "This iPhone concept website incorporates 3D animations that change when the user scrolls on the page. Additionally, the user can preview and interact with the phone model."
               }
@@ -92,7 +131,7 @@ const Projects = () => {
                   link: "https://greensock.com/gsap//",
                 },
                 {
-                  skill: "Pure CSS",
+                  skill: "CSS",
                   link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
                 },
                 {
@@ -108,7 +147,7 @@ const Projects = () => {
           <div className="col-span-2 xl:col-span-1">
             <Project
               image={saFoodBlogCoverImage}
-              title={"South African Food Blog"}
+              title={"South African Foods"}
               summary={
                 "A food blog containing popular, traditional South African recipes. My main goal for this project was learning GraphQL and I used hygraphCMS to manage and experiment with the content. I used the DALL-E AI to generate the colour-splashed animals and flag."
               }
@@ -121,10 +160,6 @@ const Projects = () => {
                 {
                   skill: "JavaScript",
                   link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-                },
-                {
-                  skill: "HTML",
-                  link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
                 },
                 {
                   skill: "Tailwind CSS",
@@ -141,66 +176,16 @@ const Projects = () => {
               githubLink={"https://github.com/kiminel/food-blog"}
             />
           </div>
-
-          <div className="col-span-2 xl:col-span-1">
-            <Project
-              image={chevonTutoringCoverImage}
-              title={"Chevon's Tutoring Services"}
-              summary={
-                "For this simple Brochure Website, I worked with a client offering part-time Tutoring Services from a Qualified Teacher. I used Canva and Adobe Express to create all of the art, including the classroom background and moving Stickers. I loved getting creative and incorporating movement!"
-              }
-              skills={[
-                { skill: "Canva", link: "https://www.canva.com/" },
-                { skill: "React.js", link: "https://react.dev/" },
-                {
-                  skill: "react-router-dom",
-                  link: "https://www.npmjs.com/package/react-router-dom",
-                },
-                {
-                  skill: "JavaScript",
-                  link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-                },
-                {
-                  skill: "HTML",
-                  link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
-                },
-                {
-                  skill: "Tailwind CSS",
-                  link: "https://https://tailwindcss.com/",
-                },
-                {
-                  skill: "framer-motion",
-                  link: "https://www.framer.com/motion/",
-                },
-              ]}
-              hostedLink={"https://chevon-kuik-tutoring.netlify.app/"}
-              githubLink={"https://github.com/kiminel/chevon-tutoring"}
-            />
-          </div>
-
-          <div className="col-span-2 xl:col-span-1">
-            <Project
-              image={toDoPlannerCoverImage}
-              title={"To-Do Planner"}
-              summary={
-                "The main goal for this To-Do Planner was to learn the basics of Vue.js. I also used Tailwind CSS for the first time and ended up loving it! As always, this website was built with the mobile-first mindset and is fully responsive."
-              }
-              skills={[
-                { skill: "Vue.js", link: "https://vuejs.org/" },
-                {
-                  skill: "Vite",
-                  link: "https://vitejs.dev/",
-                },
-                {
-                  skill: "Tailwind CSS",
-                  link: "https://https://tailwindcss.com/",
-                },
-              ]}
-              hostedLink={"https://to-do-planner.vercel.app/"}
-              githubLink={"https://github.com/kiminel/ToDo-Planner"}
-            />
-          </div>
         </div>
+      </div>
+      <div className="flex justify-center py-4">
+        <Link
+          href="https://github.com/kiminel?tab=repositories"
+          target="_blank"
+          className="ml-4 rounded-lg bg-dark text-light p-2 px-4 text-sm hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark"
+        >
+          Show More Projects
+        </Link>
       </div>
     </div>
   );

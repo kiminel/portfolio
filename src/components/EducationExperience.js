@@ -40,7 +40,6 @@ const experienceDetails = [
 const educationDetails = [
   {
     title: "Bachelor of Science in Information Technology",
-    titleLink: "/BScIT.pdf",
     place: "Pearson Institute of Higher Education",
     placeLink: "https://www.pearson.com/en-us.html",
     time: "obtained in 2020",
@@ -48,18 +47,10 @@ const educationDetails = [
   },
   {
     title: "Higher Certificate in Information Systems Engineering",
-    titleLink: "/HCISE.pdf",
     place: "CTI Education Group",
     placeLink: "https://www.facebook.com/ctieducationgroup/",
     time: "obtained in 2017",
     location: "Cape Town",
-  },
-  {
-    title: "High School Diploma",
-    place: "Paarl Gymnasium High",
-    placeLink: "https://www.facebook.com/groups/131441200200865/?locale=af_ZA",
-    time: "obtained in 2015",
-    location: "Paarl",
   },
 ];
 
