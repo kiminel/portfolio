@@ -82,7 +82,7 @@ const About = () => {
       <div className="h-full col-span-1 flex flex-col justify-between dark:text-light py-8 gap-y-4 lg:gap-y-0 order-3">
         <div className="flex flex-col lg:items-end items-center">
           <span className="inline-block text-7xl font-bold">
-            <AnimatedNumbers value={4} />+
+            <AnimatedNumbers value={3} />+
           </span>
           <h2 className="text-xl font-medium text-dark/75 dark:text-light">
             Showcase Projects

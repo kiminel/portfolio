@@ -62,7 +62,7 @@ const Projects = () => {
             />
           </div>
 
-          <div className="col-span-2 xl:col-span-1">
+          {/* <div className="col-span-2 xl:col-span-1">
             <Project
               image={eatCuriousCloneCoverImage}
               title={"Eat Curious Clone"}
@@ -103,7 +103,7 @@ const Projects = () => {
               hostedLink={"https://eat-curious-clone.vercel.app/"}
               githubLink={"https://github.com/kiminel/eat-curious-clone"}
             />
-          </div>
+          </div> */}
 
           <div className="col-span-2 xl:col-span-1">
             <Project
