@@ -3,8 +3,6 @@ import Link from "next/link";
 import { AnimatedText } from "@/components/elements/AnimatedText";
 import spaceXCoverImage from "../../public/images/projects/Space-X.png";
 import iPhoneCoverImage from "../../public/images/projects/iPhone.png";
-import saFoodBlogCoverImage from "../../public/images/projects/SA-Food-Blog.png";
-import eatCuriousCloneCoverImage from "../../public/images/projects/Eat-Curious-Clone.png";
 import Project from "@/components/Project";
 
 const Projects = () => {
