@@ -25,9 +25,9 @@ const Hero = () => {
             className="flex flex-wrap text-5xl lg:text-6xl justify-center px-8 text-center"
           />
           <p className="my-8 text-base md:text-lg font-medium px-4 lg:px-0 text-center dark:text-light">
-            I am a passionate, enthusiastic and eager developer approaching 3
-            years of experience and specializing in React. I enjoy all creative
-            challenges and will make your design dreams come true!
+            I am a passionate, enthusiastic and eager developer with 3 years of
+            experience, specializing in React. I enjoy all creative challenges
+            and will make your design dreams come true!
           </p>
           <div className="flex items-center justify-center text-center mt-2 px-8 animate-bounce">
             <Link

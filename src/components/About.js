@@ -55,8 +55,8 @@ const About = () => {
           common mistakes around coding, business management and teamwork.
         </p>
         <p className="font-medium dark:text-light">
-          I take pride in writing well-tested, clean code. I sleep easy at
-          night, knowing at the end of the day,{" "}
+          I take pride in writing well-tested, clean and scalable code. I sleep
+          easy at night, knowing at the end of the day,{" "}
           <span className="italic">my code will be legacy!</span>
         </p>
       </div>

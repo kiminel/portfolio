@@ -24,7 +24,7 @@ const experienceDetails = [
     time: "Dec 2021 - May 2023",
     location: "United Kingdom",
     description:
-      "Worked on a variety of projects, ranging in different technologies and teams. After 4 months, I was placed on one of the company's Funding Service clients projects. I worked with numerous team members, including Product Owners, Business Analysts, Quality Assurance testers, Site Reliability Engineers, Delivery- and Tech Leads, as well as UI/UX designers and Content Writers.",
+      "Worked on a variety of projects, ranging in different technologies and teams. Later, I was placed on a project for one of the company's Funding Service clients. I worked closely with numerous team members and key stakeholders, including Product Owners, Business Analysts, Quality Assurance testers, Site Reliability Engineers, Delivery- and Tech Leads, as well as UI/UX designers and Content Writers.",
   },
   {
     title: "Junior Web Developer",
@@ -33,7 +33,7 @@ const experienceDetails = [
     time: "Feb 2021 - Nov 2021",
     location: "South Africa",
     description:
-      "Worked with a team member to refactor, maintain and build the company CRM system. Later, I was paired with another team member to design and build a product-training system, to teach users how to use the main product. We worked closely with the Sales- and Support- Departments; as well as provided regular feedback demos to the CEO and CTO.",
+      "Worked with a team member to refactor, maintain and build the company CRM system. Later, I was paired with another team member to design and build a product-training system that teaches users how to use the main product. We worked closely with the Sales- and Support- departments; as well as provided regular feedback demos to the CEO and CTO.",
   },
 ];
 
