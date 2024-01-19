@@ -62,49 +62,6 @@ const Projects = () => {
             />
           </div>
 
-          {/* <div className="col-span-2 xl:col-span-1">
-            <Project
-              image={eatCuriousCloneCoverImage}
-              title={"Eat Curious Clone"}
-              summary={
-                "I used the Official Eat-Curious website to build this clone, using the latest technologies and trends. I experimented with animations, including Parallax effects, Image- and Text Carousels, Marquees, Hover- and Click Effects, Scrolling Animations and more."
-              }
-              skills={[
-                { skill: "React.js", link: "https://react.dev/" },
-                {
-                  skill: "Next.js",
-                  link: "https://nextjs.org/",
-                },
-                {
-                  skill: "JavaScript",
-                  link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-                },
-                {
-                  skill: "Tailwind CSS",
-                  link: "https://https://tailwindcss.com/",
-                },
-                {
-                  skill: "framer-motion",
-                  link: "https://www.framer.com/motion/",
-                },
-                {
-                  skill: "react-intersection-observer",
-                  link: "https://www.npmjs.com/package/react-intersection-observer",
-                },
-                {
-                  skill: "react-slick",
-                  link: "https://www.npmjs.com/package/react-slick",
-                },
-                {
-                  skill: "slick-carousel",
-                  link: "https://www.npmjs.com/package/slick-carousel",
-                },
-              ]}
-              hostedLink={"https://eat-curious-clone.vercel.app/"}
-              githubLink={"https://github.com/kiminel/eat-curious-clone"}
-            />
-          </div> */}
-
           <div className="col-span-2 xl:col-span-1">
             <Project
               image={iPhoneCoverImage}
@@ -141,39 +98,6 @@ const Projects = () => {
               ]}
               hostedLink={"https://iphone-concept.vercel.app/"}
               githubLink={"https://github.com/kiminel/iphone"}
-            />
-          </div>
-
-          <div className="col-span-2 xl:col-span-1">
-            <Project
-              image={saFoodBlogCoverImage}
-              title={"South African Foods"}
-              summary={
-                "A food blog containing popular, traditional South African recipes. My main goal for this project was learning GraphQL and I used hygraphCMS to manage and experiment with the content. I used the DALL-E AI to generate the colour-splashed animals and flag."
-              }
-              skills={[
-                { skill: "React.js", link: "https://react.dev/" },
-                {
-                  skill: "react-router-dom",
-                  link: "https://www.npmjs.com/package/react-router-dom",
-                },
-                {
-                  skill: "JavaScript",
-                  link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-                },
-                {
-                  skill: "Tailwind CSS",
-                  link: "https://https://tailwindcss.com/",
-                },
-                { skill: "GraphQL", link: "https://graphql.org/" },
-                {
-                  skill: "graphql-request",
-                  link: "https://www.npmjs.com/package/graphql-request",
-                },
-                { skill: "hygraphCMS", link: "https://hygraph.com/" },
-              ]}
-              hostedLink={"https://sa-food-blog.netlify.app/"}
-              githubLink={"https://github.com/kiminel/food-blog"}
             />
           </div>
         </div>
