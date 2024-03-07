@@ -3,6 +3,8 @@ import Link from "next/link";
 import { AnimatedText } from "@/components/elements/AnimatedText";
 import spaceXCoverImage from "../../public/images/projects/Space-X.png";
 import iPhoneCoverImage from "../../public/images/projects/iPhone.png";
+import eatCuriousCoverImage from "../../public/images/projects/eatCurious.png";
+import saFoodBlogCoverImage from "../../public/images/projects/SAfoodBlog.png";
 import Project from "@/components/Project";
 
 const Projects = () => {
@@ -51,6 +53,10 @@ const Projects = () => {
                   link: "https://github.com/r-spacex/SpaceX-API",
                 },
                 {
+                  skill: "REST API",
+                  link: "https://restfulapi.net/",
+                },
+                {
                   skill: "react-moment",
                   link: "https://www.npmjs.com/package/react-moment",
                 },
@@ -94,6 +100,68 @@ const Projects = () => {
               ]}
               hostedLink={"https://iphone-concept.vercel.app/"}
               githubLink={"https://github.com/kiminel/iphone"}
+            />
+          </div>
+
+          <div className="col-span-2 xl:col-span-1">
+            <Project
+              image={eatCuriousCoverImage}
+              title={"Eat Curious Clone"}
+              summary={`This is a clone of the official Eat Curious website, where I incorporated multiple animations and movements, including Marquees, Carousels, Animated Text and Images, etc. The goal for this project was to replicate the original website as much as possible, while learning fundamental Front-End concepts and incorporating the latest trends and technologies.`}
+              skills={[
+                {
+                  skill: "Eat Curious Official Website",
+                  link: "https://eat-curious.com/",
+                },
+                { skill: "React.js", link: "https://react.dev/" },
+                {
+                  skill: "Next.js",
+                  link: "https://nextjs.org/",
+                },
+                {
+                  skill: "Tailwind css",
+                  link: "https://tailwindcss.com/",
+                },
+                {
+                  skill: "framer-motion",
+                  link: "https://www.framer.com/",
+                },
+              ]}
+              hostedLink={"https://eat-curious-clone.vercel.app/"}
+              githubLink={"https://github.com/kiminel/eat-curious-clone"}
+            />
+          </div>
+
+          <div className="col-span-2 xl:col-span-1">
+            <Project
+              image={saFoodBlogCoverImage}
+              title={"South African Food Blog"}
+              summary={`The goal for this project was to learn GraphQL. I used the Hygraph CMS software to manage the backend information and behaviours. The splash images were created using the DALL-E AI model from OpenAI. `}
+              skills={[
+                { skill: "React.js", link: "https://react.dev/" },
+                {
+                  skill: "Tailwind css",
+                  link: "https://tailwindcss.com/",
+                },
+                {
+                  skill: "Hygraph CMS",
+                  link: "https://hygraph.com/",
+                },
+                {
+                  skill: "GraphQL",
+                  link: "https://graphql.org/",
+                },
+                {
+                  skill: "graphql-request",
+                  link: "https://www.npmjs.com/package/graphql-request",
+                },
+                {
+                  skill: "react-router-dom",
+                  link: "https://www.npmjs.com/package/react-router-dom",
+                },
+              ]}
+              hostedLink={"https://sa-food-blog.netlify.app/"}
+              githubLink={"https://github.com/kiminel/food-blog"}
             />
           </div>
         </div>
