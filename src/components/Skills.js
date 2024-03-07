@@ -19,10 +19,10 @@ const Skills = () => {
         </motion.div>
 
         <Skill
-          name={"CSS"}
+          name={"Vue"}
           xPosition={"-7vw"}
           yPosition={"-5vw"}
-          href={"https://developer.mozilla.org/en-US/docs/Web/CSS"}
+          href={"https://vuejs.org/"}
         />
         <Skill
           name={"HTML"}
@@ -121,10 +121,10 @@ const Skills = () => {
           href={"https://git-scm.com/doc"}
         />
         <Skill
-          name={"Canva"}
+          name={"CSS"}
           xPosition={"-21vw"}
           yPosition={"-6vw"}
-          href={"https://www.canva.com/"}
+          href={"https://developer.mozilla.org/en-US/docs/Web/CSS"}
         />
         <Skill
           name={"Figma"}
@@ -143,10 +143,10 @@ const Skills = () => {
         </motion.div>
 
         <Skill
-          name={"CSS"}
+          name={"Vue"}
           xPosition={"-7vw"}
           yPosition={"-15vw"}
-          href={"https://developer.mozilla.org/en-US/docs/Web/CSS"}
+          href={"https://vuejs.org/"}
         />
         <Skill
           name={"HTML"}
@@ -245,10 +245,10 @@ const Skills = () => {
           href={"https://git-scm.com/doc"}
         />
         <Skill
-          name={"Canva"}
+          name={"CSS"}
           xPosition={"-21vw"}
           yPosition={"-10vw"}
-          href={"https://www.canva.com/"}
+          href={"https://developer.mozilla.org/en-US/docs/Web/CSS"}
         />
         <Skill
           name={"Figma"}
