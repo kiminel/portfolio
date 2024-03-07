@@ -22,7 +22,7 @@ const Projects = () => {
               image={spaceXCoverImage}
               title={"SpaceX Launches"}
               summary={
-                "I used the publicly available SpaceX API to build this concept website using the latest technologies and trends. Instead of using packages to help with scrolling animations, I opted for pure JavaScript to showcase how different React Hooks operate."
+                "Using the publicly available SpaceX API, this website displays Launch information, such as ship name and date of launch. The API has some limitations, which is why I mathematically randomized cover image displays. The goals for this project included utilizing tools such as MaterialUI correctly and fully; while also opting for pure JavaScript animations, instead of using packages."
               }
               skills={[
                 { skill: "React.js", link: "https://react.dev/" },
@@ -64,9 +64,7 @@ const Projects = () => {
             <Project
               image={iPhoneCoverImage}
               title={"iPhone 3D Showcase"}
-              summary={
-                "This iPhone concept website incorporates 3D animations that change when the user scrolls on the page. Additionally, the user can preview and interact with the phone model."
-              }
+              summary={`This iPhone concept website incorporates 3D animations that change when the user scrolls on the page. The user also has the ability to preview and interact with the phone model when clicking "Try Me". The goals for this project included learning Three.js and incorporating 3D, interactable models.`}
               skills={[
                 { skill: "React.js", link: "https://react.dev/" },
                 {
