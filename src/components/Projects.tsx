@@ -5,6 +5,7 @@ import iPhoneCoverImage from "../../public/images/projects/iPhone.png";
 import eatCuriousCoverImage from "../../public/images/projects/eatCurious.png";
 import saFoodBlogCoverImage from "../../public/images/projects/SAfoodBlog.png";
 import Project from "@/components/Project";
+import { PERSONAL_LINKS } from "../utils/personalInfo";
 
 const Projects = () => {
   return (
@@ -167,7 +168,7 @@ const Projects = () => {
       </div>
       <div className="flex justify-center py-4">
         <Link
-          href="https://github.com/kiminel?tab=repositories"
+          href={PERSONAL_LINKS.githubRepos}
           target="_blank"
           className="ml-4 rounded-lg bg-dark text-light p-2 px-4 text-sm hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark"
         >

@@ -1,5 +1,6 @@
 ﻿import { CircularText } from "../icons/CircularText";
 import { FlashButton } from "./FlashButton";
+import { PERSONAL_LINKS } from "../../utils/personalInfo";
 
 const Contact = () => {
   return (
@@ -8,7 +9,7 @@ const Contact = () => {
         <CircularText className="animate-reverse-spin dark:text-light min-w-[200px] max-w-[200px]" />
         <FlashButton
           text={"Contact"}
-          href={"mailto:kiminel25@gmail.com"}
+          href={PERSONAL_LINKS.emailMailto}
           target={"_blank"}
           className="absolute bg-dark text-light shadow-md border-solid border-dark w-20 h-20 rounded-full font-semibold"
         />
@@ -18,3 +19,4 @@ const Contact = () => {
 };
 
 export default Contact;
+

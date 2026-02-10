@@ -4,6 +4,7 @@ import { AnimatedText } from "./elements/AnimatedText";
 import aboutMePic from "../../public/images/profile/Headshot.png";
 import aboutMeWavePic from "../../public/images/profile/Headshot-Wave.png";
 import { useInView, useMotionValue, useSpring } from "framer-motion";
+import { getYearsOfExperience } from "../utils/personalInfo";
 
 type AnimatedNumbersProps = {
   value: number;
@@ -38,6 +39,7 @@ const AnimatedNumbers = ({ value }: AnimatedNumbersProps) => {
 
 const About = () => {
   const [pic, setPic] = useState(false);
+  const { years, isExactAnniversary } = getYearsOfExperience();
 
   return (
     <div
@@ -83,8 +85,8 @@ const About = () => {
         </div>
       </div>
 
-      <div className="h-full col-span-1 flex flex-col justify-between dark:text-light py-8 gap-y-4 lg:gap-y-0 order-3">
-        <div className="flex flex-col lg:items-end items-center">
+      <div className="h-full col-span-1 flex flex-col items-center justify-center text-center dark:text-light py-8 gap-16 order-3">
+        <div className="flex flex-col items-center">
           <span className="inline-block text-7xl font-bold">
             <AnimatedNumbers value={4} />+
           </span>
@@ -93,18 +95,10 @@ const About = () => {
           </h2>
         </div>
 
-        <div className="flex flex-col lg:items-end items-center text-center md:text-end">
+        <div className="flex flex-col items-center">
           <span className="inline-block text-7xl font-bold">
-            <AnimatedNumbers value={10} />+
-          </span>
-          <h2 className="text-xl font-medium text-dark/75 dark:text-light">
-            Languages & Frameworks
-          </h2>
-        </div>
-
-        <div className="flex flex-col lg:items-end items-center">
-          <span className="inline-block text-7xl font-bold">
-            <AnimatedNumbers value={3} />+
+            <AnimatedNumbers value={years} />
+            {!isExactAnniversary && "+"}
           </span>
           <h2 className="text-xl font-medium text-dark/75 dark:text-light">
             Years Of Experience

@@ -5,6 +5,7 @@ import useThemeSwitcher from "../hooks/useThemeSwitcher";
 import Moon from "../icons/Moon";
 import Sun from "../icons/Sun";
 import LinkedInLogo from "../icons/LinkedInLogo";
+import { PERSONAL_LINKS } from "../../utils/personalInfo";
 import GithubLogo from "../icons/GithubLogo";
 import Logo from "../icons/Logo";
 import HamburgerMenu from "../icons/HamburgerMenu";
@@ -83,14 +84,14 @@ const Navbar = () => {
     return (
       <nav className="flex items-center justify-center space-x-2">
         <a
-          href={"https://www.linkedin.com/in/kimi-monique-nel-67a289191"}
+          href={PERSONAL_LINKS.linkedin}
           target={"_blank"}
           className="bg-dark text-light border-2 p-2 rounded-full hover:-translate-y-1 transition duration-200 hover:bg-light hover:border-solid hover:text-dark dark:bg-light dark:text-dark dark:hover:bg-dark dark:hover:text-light"
         >
           <LinkedInLogo className={"h-4 w-4"} />
         </a>
         <a
-          href={"https://github.com/kiminel"}
+          href={PERSONAL_LINKS.github}
           target={"_blank"}
           className="hover:-translate-y-1 transition duration-200 bg-dark text-light border-2 rounded-full p-1 hover:bg-light hover:border-solid hover:text-dark dark:bg-light dark:text-dark dark:hover:bg-dark dark:hover:text-light"
         >
@@ -159,3 +160,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+

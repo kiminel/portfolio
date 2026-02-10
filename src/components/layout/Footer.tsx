@@ -1,4 +1,5 @@
 ﻿import Link from "next/link";
+import { PERSONAL_LINKS } from "../../utils/personalInfo";
 
 const Footer = () => {
   return (
@@ -7,7 +8,7 @@ const Footer = () => {
         {new Date().getFullYear()} &copy; All Rights Reserved
       </span>
       <Link
-        href={"https://www.linkedin.com/in/kimi-monique-nel-67a289191/"}
+        href={PERSONAL_LINKS.linkedin}
         target="_blank"
         className="text-light"
       >
@@ -18,3 +19,4 @@ const Footer = () => {
 };
 
 export default Footer;
+

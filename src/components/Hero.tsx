@@ -4,8 +4,11 @@ import { AnimatedText } from "@/components/elements/AnimatedText";
 import NewTabArrow from "@/components/icons/NewTabArrow";
 import Contact from "./elements/Contact";
 import profilePic from "../../public/images/profile/Kimi_Wave.png";
+import { getYearsOfExperience } from "../utils/personalInfo";
 
 const Hero = () => {
+  const { years, isExactAnniversary } = getYearsOfExperience();
+
   return (
     <div id="home" className="grid grid-cols-1 xl:grid-cols-2 space-y-6">
       <div className="lg:pt-32 col-span-1 flex justify-center xl:justify-end">
@@ -24,9 +27,10 @@ const Hero = () => {
             className="flex flex-wrap text-5xl lg:text-6xl justify-center px-8 text-center"
           />
           <p className="my-8 text-base md:text-lg font-medium px-4 lg:px-0 text-center dark:text-light">
-            I am a passionate, enthusiastic and eager developer with 3 years of
-            experience, specializing in React. I enjoy all creative challenges
-            and will make your design dreams come true!
+            I am a passionate, enthusiastic and eager developer with {years}
+            {!isExactAnniversary && "+"} years of experience, specializing in
+            React and Vue. I enjoy all creative challenges and will make your design
+            dreams come true!
           </p>
           <div className="flex items-center justify-center text-center mt-2 px-8 animate-bounce">
             <Link
